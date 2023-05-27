@@ -1,15 +1,14 @@
-import { FC } from 'react'
+import React from 'react'
+import NavBar from '../components/NavigationBar/NavBar'
 
-interface pageProps {
-  
-}
-
-const Home = ({}) => {
+const HomePage = ({}) => {
   return (
     <>
-
+    <div className='w-full px-5 py-3'>
+      <NavBar />
+    </div>
     </>
   )
 }
 
-export default Home
+export default HomePage
