@@ -8,9 +8,15 @@ const NavBar = () => {
     <>
       <div className='
       hidden
-      lg:flex
+      md:flex
+      w-full
+      md:w-[95%]
+      lg:w-[90%]
+      xl:w-[80%]
+      items-center
       flex-row
-      justify-between'>
+      justify-between
+      '>
         <Logo />
         <Links />
         <Socials />
