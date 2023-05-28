@@ -10,8 +10,8 @@ const NavBar = () => {
       hidden
       md:flex
       w-full
-      md:w-[95%]
-      lg:w-[90%]
+      md:w-[90%]
+      lg:w-[85%]
       xl:w-[80%]
       items-center
       flex-row

@@ -14,7 +14,6 @@ const ProjectsSection = () => {
       flex
       flex-col
       justify-center
-      md:w-[95%]
       items-center'>
         <h1 className='
         text-left
