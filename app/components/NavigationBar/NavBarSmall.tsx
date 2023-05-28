@@ -34,7 +34,12 @@ const NavBarSmall = () => {
           gap-5
         '>
           <Socials />
-          <Button className='rounded-lg w-3/4 text-white text-[7px] bg-black p-1' text='My Projects'/>
+          <Button className='rounded-lg
+            w-3/4
+            text-white
+            text-[7px]
+            bg-black
+            p-[5px]' text='My Projects'/>
         </div>
       </div>
     </>
