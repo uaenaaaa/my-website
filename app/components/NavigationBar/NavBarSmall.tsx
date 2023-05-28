@@ -13,7 +13,6 @@ const NavBarSmall = () => {
         items-start
         justify-between
         w-full
-        px-1
         md:hidden
       '>
         <div className='

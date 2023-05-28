@@ -7,7 +7,7 @@ import ProjectsSection from '../components/Projects/ProjectsSection'
 const HomePage = ({}) => {
   return (
     <>
-      <div className='w-full px-5 py-3 gap-3 flex flex-col justify-center'>
+      <div className='w-full px-5 py-3 gap-5 flex flex-col items-center justify-center'>
         <NavBar />
         <NavBarSmall />
         <HeroSection />
