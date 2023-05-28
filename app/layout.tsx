@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={`${poppins.className}  pt-4 md:pt-6 xl:pt-10 w-full justify-center flex flex-col items-center`}>
         <NavBar/>
         <NavBarSmall/>
         {children}
