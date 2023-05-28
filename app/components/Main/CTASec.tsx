@@ -1,10 +1,21 @@
-import { FC } from 'react'
+import React from 'react'
+import Arrow from '../../../public/images/arrow.png'
+import Image from 'next/image'
 
 const CTASec = () => {
   return (
     <>
-      <div className='w-full'>
-        
+      <div className='
+        w-full
+        flex
+        flex-row
+        justify-center
+        relative'>
+        <div className='w-3/4'>
+          <h1 className='font-bold'>Hi! I'm Froilan,</h1>
+          <p className='text-xs'>Software Developer Based In Caloocan Philippines</p>
+        </div>
+          <Image className='w-1/4 absolute top-[-35%] left-[65%]' src={ Arrow } alt='Arrow Illustration'/>
       </div>
     </>
   )

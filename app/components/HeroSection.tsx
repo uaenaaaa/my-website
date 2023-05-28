@@ -5,9 +5,9 @@ import Hero from './Main/Hero'
 const HeroSection = ({}) => {
   return (
     <>
-      <div className='flex flex-col'>
-        <CTASec />
+      <div className='flex flex-col gap-5'>
         <Hero />
+        <CTASec />
       </div>
     </>
   )
