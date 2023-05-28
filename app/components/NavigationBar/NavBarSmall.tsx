@@ -12,7 +12,7 @@ const NavBarSmall = () => {
         flex-row
         items-start
         justify-between
-        w-full
+        w-[95%]
         md:hidden
       '>
         <div className='

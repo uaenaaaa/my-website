@@ -5,7 +5,7 @@ import Hero from './Main/Hero'
 const HeroSection = ({}) => {
   return (
     <>
-      <div className='flex flex-col lg:flex-row-reverse gap-5 w-full'>
+      <div className='flex flex-col lg:flex-row-reverse gap-5 w-full md:w-[95%]'>
         <Hero />
         <CTASec />
       </div>
