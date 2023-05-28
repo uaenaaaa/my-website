@@ -1,5 +1,7 @@
 import './globals.css'
 import { Poppins } from 'next/font/google'
+import NavBar from './components/NavigationBar/NavBar'
+import NavBarSmall from './components/NavigationBar/NavBarSmall'
 
 const poppins = Poppins(
   { 
@@ -26,7 +28,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <NavBar/>
+        <NavBarSmall/>
+        {children}
+      </body>
     </html>
   )
 }
