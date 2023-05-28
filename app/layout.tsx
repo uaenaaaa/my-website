@@ -2,6 +2,7 @@ import './globals.css'
 import { Poppins } from 'next/font/google'
 import NavBar from './components/NavigationBar/NavBar'
 import NavBarSmall from './components/NavigationBar/NavBarSmall'
+import { Analytics } from '@vercel/analytics/react';
 
 const poppins = Poppins(
   { 
@@ -42,6 +43,7 @@ export default function RootLayout({
         <NavBar/>
         <NavBarSmall/>
         {children}
+        <Analytics />
       </body>
     </html>
   )
