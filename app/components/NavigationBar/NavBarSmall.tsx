@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '../Logo'
 import Links from '../Links/Links'
 import Socials from '../Socials/Socials'
+import Button from '../Button'
 
 const NavBarSmall = () => {
   return (
@@ -27,10 +28,13 @@ const NavBarSmall = () => {
         <div className='
           w-[35%]
           flex
+          flex-col
           justify-center
-          items-center
+          items-end
+          gap-5
         '>
           <Socials />
+          <Button className='rounded-lg w-3/4 text-white text-[7px] bg-black p-1' text='My Projects'/>
         </div>
       </div>
     </>
