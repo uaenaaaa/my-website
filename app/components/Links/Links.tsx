@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const Links = ({}) => {
-  const pathname = typeof window != 'undefined' ? usePathname() : ''
+  const pathname = usePathname()
   const ActiveLink = (path: string): boolean => {
     return pathname === path
   }

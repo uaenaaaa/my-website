@@ -12,7 +12,7 @@ const CTASec = () => {
         justify-center
         relative'>
         <div className='w-3/4'>
-          <h1 className='font-bold'>Hi! I'm Froilan,</h1>
+          <h1 className='font-bold'>Hi! I&apos;m Froilan,</h1>
           <p className='text-xs md:hidden'>Software Developer Based In</p>
           <p className='text-xs md:hidden'>Caloocan Philippines</p>
           <p className='text-xs hidden md:block'>Software Developer Based In Caloocan Philippines</p>
