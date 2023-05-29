@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google'
 import NavBar from './components/NavigationBar/NavBar'
 import NavBarSmall from './components/NavigationBar/NavBarSmall'
 import { Analytics } from '@vercel/analytics/react';
+import Providers from './components/ThemeProvider';
 
 const poppins = Poppins(
   { 
@@ -40,9 +41,11 @@ export default function RootLayout({
         flex
         flex-col
         items-center`}>
-        <NavBar/>
-        <NavBarSmall/>
-        {children}
+        <Providers>
+          <NavBar/>
+          <NavBarSmall/>
+          {children}
+        </Providers>
         <Analytics />
       </body>
     </html>
