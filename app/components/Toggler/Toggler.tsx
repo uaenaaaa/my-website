@@ -1,23 +1,20 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import { FiSun, FiMoon } from "react-icons/fi";
-import { useTheme } from "next-themes";
+"use client"
+import React, { useEffect, useState } from "react"
+import { FiSun, FiMoon } from "react-icons/fi"
+import { useTheme } from "next-themes"
 
 const Toggler = () => {
-  const [ mounted, setMounted ] = useState(false);
-  const { theme, setTheme } = useTheme();
-
-  // useEffect only runs on the client, so now we can safely show the UI
-
+  const [ mounted, setMounted ] = useState(false)
+  const { theme, setTheme } = useTheme()
   useEffect(() => {
-    setMounted(true);
-  }, []);
+    setMounted(true)
+  }, [])
 
   if (!mounted) {
-    return null;
+    return null
   }
 
-  const light = theme === "light";
+  const light = theme === "light"
   return (
     <button className="">
       {light ? (
@@ -26,7 +23,7 @@ const Toggler = () => {
         <FiSun onClick={() => setTheme("light")} />
       )}
     </button>
-  );
-};
+  )
+}
 
-export default Toggler;
+export default Toggler
