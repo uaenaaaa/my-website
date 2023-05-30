@@ -105,16 +105,6 @@ const Contacts = () => {
               justify-start
               items-center
               gap-x-3'>
-              <AiFillDribbbleCircle />
-              <h1>Dribbble - @frln1</h1>
-            </div>
-            <div className='
-              flex
-              flex-row
-              w-full
-              justify-start
-              items-center
-              gap-x-3'>
               <CgFigma />
               <h1>Figma - @frln</h1>
             </div>
@@ -127,7 +117,7 @@ const Contacts = () => {
           flex-col
           w-full
           gap-x-3'>
-          <h1 className='font-semibold'>My Designs</h1>
+          <h1 className='font-semibold'>My Work&apos;s source code</h1>
           <div className='
           flex
           flex-row
