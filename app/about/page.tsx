@@ -1,16 +1,15 @@
 import Link from 'next/link'
 import React from 'react'
-import {
-  SiFirebase,
-  SiMysql,
-  SiNextdotjs,
-  SiPostgresql,
-  SiSupabase,
-  SiTailwindcss
-} from 'react-icons/si'
-import { FaReact } from 'react-icons/fa'
-import { AiFillGithub } from 'react-icons/ai'
-import { CgFigma } from 'react-icons/cg'
+import { 
+  MySQL,
+  NextJS,
+  ReactJS,
+  Postgresql,
+  Firebase,
+  Supabase,
+  Github,
+  TailWindCSS,
+  Figma } from '../components/SVGModules/SVGModule'
 
 const About = () => {
   return (
@@ -27,7 +26,7 @@ const About = () => {
         font-bold
         text-xl'>About</h1>
         <div>
-          <h1>Hi, I'm Froilan Aquino, currently living in Bagong Silang, Caloocan City, Manila, Philippines! I'm a full-stack developer/engineer, and I develop and leverage JavaScript, Python, and MySQL.</h1>
+          <h1>Hi, I&apos;m Froilan Aquino, currently living in Bagong Silang, Caloocan City, Manila, Philippines! I&apos;m a full-stack developer/engineer, and I develop and leverage JavaScript, Python, and MySQL.</h1>
         </div>
 
         <div className='w-full'>
@@ -45,47 +44,49 @@ const About = () => {
 
               <div className='grid w-full grid-cols-3'>
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <SiNextdotjs />
+                  <NextJS />
                   <p className='text-md'>NextJS</p>
                 </div>
 
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <FaReact />
+                  <ReactJS />
                   <p>ReactJS</p>
                 </div>
 
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <SiMysql />
+                  <MySQL />
                   <p>MySQL</p>
                 </div>
 
-                <div className='flex flex-col justify-center items-center gap-3'>
-                  <SiPostgresql />
+                <div className='flex flex-col justif
+                
+                y-center items-center gap-3'>
+                  <Postgresql />
                   <p>PostgreSQL</p>
                 </div>
 
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <SiFirebase />
+                  <Firebase />
                   <p>Firebase</p>
                 </div>
 
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <SiSupabase />
+                  <Supabase />
                   <p>Supabase</p>
                 </div>
 
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <AiFillGithub />
+                  <Github />
                   <p>Github</p>
                 </div>
 
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <SiTailwindcss />
+                  <TailWindCSS className='w-full'/>
                   <p>Tailwind CSS</p>
                 </div>
 
                 <div className='flex flex-col justify-center items-center gap-3'>
-                  <CgFigma />
+                  <Figma />
                   <p>Figma</p>
                 </div>
               </div>
