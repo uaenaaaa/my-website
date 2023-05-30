@@ -4,8 +4,19 @@ import React from 'react'
 const Expertise = ({}) => {
   return (
     <>
-      <div>
-        <h1>PlaceHolder</h1>
+      <div className='
+      w-[95%]
+      md:w-[90%]
+      flex
+      flex-col
+      gap-y-5
+      justify-center
+      items-center'>
+        <h1>Expertise</h1>
+
+        <div>
+
+        </div>
       </div>
     </>
   )
