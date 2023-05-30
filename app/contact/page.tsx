@@ -6,7 +6,6 @@ import {
   AiFillLinkedin,
   AiFillPhone
 } from 'react-icons/ai'
-import { BsFacebook } from 'react-icons/bs'
 import { FaDiscord } from 'react-icons/fa'
 import { CgFigma } from 'react-icons/cg'
 
@@ -71,16 +70,6 @@ const Contacts = () => {
               gap-x-3'>
                 <AiFillLinkedin />
                 <h1>- @froilan-aquino-8249a9192</h1>
-              </div>
-              <div className='
-              flex
-              flex-row
-              w-full
-              justify-start
-              items-center
-              gap-x-3'>
-                <BsFacebook />
-                <h1>- @cnmm.frln</h1>
               </div>
               <div className='
               flex
