@@ -182,7 +182,7 @@ export const LinkedIn = ({className}: SVGModuleProps) => {
 
 export const Discord = ({className}: SVGModuleProps) => {
   return (
-    <svg onClick={() => window.open('https://discord.com/login?redirect_to=%2Flogin%3Fredirect_to%3D%252Fchannels%252F834027432150564875%252F834027432587690005')} role='link' aria-label='Link to my Discord' className={className} enableBackground="new 0 0 512 512" viewBox="0 0 512 512" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+    <svg onClick={() => window.open('https://discord.com/login?redirect_to=%2Flogin%3Fredirect_to%3D%252Fchannels%252F834027432150564875%252F834027432587690005', '_blank')} role='link' aria-label='Link to my Discord' className={className} enableBackground="new 0 0 512 512" viewBox="0 0 512 512" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
       <title>Logo of Discord</title>
       <desc>The Discord logo represents a popular communication platform for gamers and communities. It features a distinctive white silhouette of a game controller on a vibrant purple background. The game controller represents the platform&apos;s focus on providing a seamless and immersive voice, video, and text communication experience for gamers and communities worldwide. Clicking on this logo will redirect you to my Discord Server where you can communicate with me.</desc>
       <circle cx="256" cy="256" className='fill-black' r="256"/>
