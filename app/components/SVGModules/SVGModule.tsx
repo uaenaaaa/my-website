@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 
 interface SVGModuleProps {
@@ -6,7 +7,7 @@ interface SVGModuleProps {
 
 export const Figma = ({className}: SVGModuleProps) => {
   return (
-    <svg role='link' aria-label='Link to Figma' className={className} viewBox="0 0 3000 3000" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+    <svg onClick={() => {window.open('https://www.figma.com/', '_blank')}} role='link' aria-label='Link to Figma' className={className} viewBox="0 0 3000 3000" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
       <title>Logo of Figma</title>
       <desc>The Figma logo represents a cloud-based design and prototyping tool used by designers and teams to collaborate on interface design projects. It features a stylized letter &quot;F&quot; in a vibrant purple color, symbolizing creativity, innovation, and collaboration. The clean lines and rounded corners of the letterform convey a sense of modernity and user-friendliness. Clicking on this logo will redirect you to the official Figma website, where you can create, edit, and share design files in real-time, enabling seamless collaboration and iterative design processes.</desc>
       <desc/>
@@ -21,7 +22,7 @@ export const Figma = ({className}: SVGModuleProps) => {
 
 export const ReactJS = ({className}: SVGModuleProps) => {
   return (
-    <svg role='link' aria-label='Link to ReactJS' className={className} fillRule='evenodd' clipRule='evenodd' strokeLinejoin='round' strokeMiterlimit='2' viewBox="0 0 128 128" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+    <svg onClick={() => {window.open('https://react.dev/', '_blank')}} role='link' aria-label='Link to ReactJS' className={className} fillRule='evenodd' clipRule='evenodd' strokeLinejoin='round' strokeMiterlimit='2' viewBox="0 0 128 128" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
       <title>Logo of React.js</title>
       <desc>The React.js logo represents a popular JavaScript library for building user interfaces. It features the word &quot;React&quot; in a bold blue font with a stylized atom symbol replacing the letter &quot;e.&quot; The atom symbolizes the modular and component-based nature of React, reflecting its core principles of reusability and efficient UI development. Clicking on this logo will redirect you to the official React.js website, where you can learn about React&apos;s declarative syntax, virtual DOM, and powerful features for creating interactive and scalable web applications.</desc>
       <g transform="matrix(1.25305,0,0,1.25305,-16.3076,4.57191)">
@@ -34,17 +35,17 @@ export const ReactJS = ({className}: SVGModuleProps) => {
 
 export const NextJS = ({className}: SVGModuleProps) => {
   return (
-    <svg role='link' aria-label='Link to NextJS' className={`${className} fill-none`} viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+    <svg onClick={() => {window.open('https://nextjs.org/', '_blank')}} role='link' aria-label='Link to NextJS' className={`${className} fill-none`} viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
       <title>Logo of Next.js</title>
       <desc>The Next.js logo represents a popular React framework for building modern web applications. It features the word &quot;Next&quot; in a bold black font with a white arrow pointing towards the right. The arrow signifies progress and forward movement, indicating the framework&apos;s focus on enabling efficient and seamless development experiences. Clicking on this logo will redirect you to the official Next.js website, where you can explore its powerful features, documentation, and resources for building fast, scalable, and SEO-friendly web applications.</desc>
-      <path clipRule="evenodd" d="M0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15 10.087 13.6902 12.3681 11.6975 13.7163L4.90687 4.20942C4.78053 4.03255 4.5544 3.95756 4.34741 4.02389C4.14042 4.09022 4 4.28268 4 4.50004V12H5V6.06027L10.8299 14.2221C9.82661 14.7201 8.696 15 7.5 15C3.35786 15 0 11.6421 0 7.5ZM10 10V4H11V10H10Z" className='fill-black' fillRule="evenodd"/>
+      <path clipRule="evenodd" d="M0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15 10.087 13.6902 12.3681 11.6975 13.7163L4.90687 4.20942C4.78053 4.03255 4.5544 3.95756 4.34741 4.02389C4.14042 4.09022 4 4.28268 4 4.50004V12H5V6.06027L10.8299 14.2221C9.82661 14.7201 8.696 15 7.5 15C3.35786 15 0 11.6421 0 7.5ZM10 10V4H11V10H10Z" className='fill-black dark:fill-white' fillRule="evenodd"/>
     </svg>
   )
 }
 
 export const MySQL = ({className}: SVGModuleProps) => {
   return (
-    <svg role='link' aria-label='Link to MySQL' className={className} viewBox="0 0 180.6 95.3" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+    <svg onClick={() => window.open('https://www.mysql.com/', '_blank')} role='link' aria-label='Link to MySQL' className={className} viewBox="0 0 180.6 95.3" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
       <title>Logo of MySQL</title>
       <desc>The MySQL logo represents a popular open-source relational database management system. It features a lowercase letter &quot;M&quot; in a bold blue font, symbolizing the simplicity, speed, and scalability of MySQL. The stylized &quot;M&quot; is formed with rounded corners, creating a friendly and approachable impression. Clicking on this logo will redirect you to the official MySQL website, where you can discover its features, download the software, and access community resources for database management and development.</desc>
       <path className='fill-[#00678F]' d="M1.7,85.3h5.8v-23l9.1,20c1,2.4,2.5,3.3,5.4,3.3c2.9,0,4.2-0.9,5.3-3.3l9-20v23h5.8v-23c0-2.2-0.9-3.3-2.8-3.9  c-4.4-1.3-7.4-0.2-8.7,2.8L21.8,81l-8.6-19.8c-1.3-3-4.3-4.1-8.7-2.8C2.6,59,1.7,60,1.7,62.3L1.7,85.3L1.7,85.3z"/>
@@ -61,7 +62,7 @@ export const MySQL = ({className}: SVGModuleProps) => {
 
 export const Postgresql = ({className}: SVGModuleProps) => {
   return (
-    <svg role='link' aria-label='Link to Postgresql' className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.6 25.6">
+    <svg onClick={() => window.open('https://www.postgresql.org/', '_blank')} role='link' aria-label='Link to Postgresql' className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.6 25.6">
       <title>Logo of PostgreSQL</title>
       <desc>The PostgreSQL logo represents an open-source relational database management system. It features a stylized blue elephant with its trunk raised, symbolizing strength, reliability, and intelligence. The logo showcases the iconic PostgreSQL elephant&apos;s head, which has become synonymous with the database software. Clicking on this logo will redirect you to the official PostgreSQL website, where you can explore its features, documentation, and community support.</desc>
       <g className='fill-none stroke-white'>
@@ -89,7 +90,7 @@ export const Postgresql = ({className}: SVGModuleProps) => {
 
 export const Firebase = ({ className }: SVGModuleProps) => {
   return (
-    <svg role='link' aria-label='Link to Firebase' className={className} baseProfile="tiny" viewBox="0 0 512 512" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+    <svg onClick={() => window.open('https://firebase.google.com/', '_blank')} role='link' aria-label='Link to Firebase' className={className} baseProfile="tiny" viewBox="0 0 512 512" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
       <title>Logo of Firebase</title>
       <desc>A logo representing Firebase, a mobile and web application development platform developed by Firebase, Inc. The logo features vibrant colors and a unique design, combining elements that symbolize innovation and technological advancement. Clicking on this logo will redirect you to the Firebase homepage, where you can explore its powerful tools and services for seamless app development and user engagement.</desc>
       <g>
@@ -104,7 +105,7 @@ export const Firebase = ({ className }: SVGModuleProps) => {
 
 export const Supabase = ({ className }: SVGModuleProps) => {
   return (
-    <svg role='link' aria-label='Link to Supbase' className={className} viewBox="0 0 256 263" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+    <svg onClick={() => window.open('https://supabase.com/', '_blank')} role='link' aria-label='Link to Supbase' className={className} viewBox="0 0 256 263" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
       <title>Logo of Supabase</title>
       <desc>The Supabase logo represents an open-source platform for building scalable and secure applications with a PostgreSQL database. It features a stylized letter &quot;S&quot; in a vibrant blue color, symbolizing strength, reliability, and versatility. The &quot;S&quot; is designed with clean lines and geometric shapes, reflecting a modern and professional aesthetic. Clicking on this logo will redirect you to the official Supabase website, where you can leverage its powerful tools and APIs to develop and deploy your applications with ease, while benefiting from the robustness of PostgreSQL.</desc>
       <defs>
@@ -130,7 +131,7 @@ export const Github = ({ className }: SVGModuleProps) => {
   return (
     <svg role='link' aria-label='Link to Github' className={className} viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
     <title>Logo of GitHub</title>
-    <desc>The GitHub logo represents a widely-used web-based platform for version control and collaboration on software development projects. It features a black cat-like mascot named &quot;Octocat,&quot; with an octagonal body and a friendly expression. The Octocat is an iconic symbol of GitHub, embodying playfulness and community. Clicking on this logo will redirect you to the official GitHub website, where you can host and manage your code repositories, collaborate with others, and contribute to open-source projects.</desc>
+    <desc>The GitHub logo represents a widely-used web-based platform for version control and collaboration on software development projects. It features a black cat-like mascot named &quot;Octocat,&quot; with an octagonal body and a friendly expression. The Octocat is an iconic symbol of GitHub, embodying playfulness and community. Clicking on this logo will redirect you to my official GitHub account, where you can browse and see my code and repositories and see how my code works under the hood.</desc>
     <g>
       <path fillRule="evenodd" clipRule="evenodd" fill="#000000" d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7C480,134.8,379.7,32,256,32z"/>
     </g>
@@ -140,7 +141,7 @@ export const Github = ({ className }: SVGModuleProps) => {
 
 export const TailWindCSS = ({ className }: SVGModuleProps) => {
   return (
-    <svg role='link' aria-label='Link to Tailwind CSS' className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 73.29">
+    <svg onClick={() => window.open('https://tailwindcss.com/', '_blank')} role='link' aria-label='Link to Tailwind CSS' className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 73.29">
       <title>Logo of Tailwind CSS</title>
       <desc>The Tailwind CSS logo represents a highly customizable, utility-first CSS framework for building modern web interfaces. It features the word &quot;Tailwind&quot; in a bold blue font with a stylized wing-like element extending from the letter &quot;d.&quot; The wing signifies the framework&apos;s ability to empower developers to rapidly build and customize user interfaces. Clicking on this logo will redirect you to the official Tailwind CSS website, where you can explore its extensive utility classes, responsive design system, and intuitive development workflow to streamline your CSS development process.</desc>
       <path className='fill-[#06B6D4]' d="M61.44,0Q36.87,0,30.72,24.43q9.22-12.21,21.5-9.16c4.68,1.16,8,4.53,11.72,8.26,6,6.08,13,13.11,28.22,13.11q24.57,0,30.72-24.43-9.21,12.22-21.5,9.16c-4.68-1.16-8-4.53-11.72-8.26C83.64,7,76.67,0,61.44,0ZM30.72,36.64Q6.15,36.64,0,61.07q9.23-12.21,21.5-9.16c4.68,1.16,8,4.53,11.72,8.27,6,6.07,13,13.11,28.22,13.11q24.57,0,30.72-24.43Q82.95,61.07,70.66,58c-4.68-1.16-8-4.53-11.72-8.26-6-6.08-13-13.12-28.22-13.12Z"/>
@@ -161,7 +162,7 @@ export const Instagram = ({ className }: SVGModuleProps) => {
 
 export const Phone = ({className}: SVGModuleProps) => {
   return (
-    <svg role='Phone call' aria-label='Button to call me' className={className} viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <svg onClick={() => window.location.href = 'tel:+639060162213'} role='Phone call' aria-label='Button to call me' className={className} viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
       <title>Phone Call</title>
       <desc>The phone call icon represents a button to call me. Clicking on this icon will redirect you to your phone app and call me.</desc>
       <path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/>
@@ -171,7 +172,7 @@ export const Phone = ({className}: SVGModuleProps) => {
 
 export const LinkedIn = ({className}: SVGModuleProps) => {
   return (
-    <svg role='link' aria-label='Link to LinkedIn' className={className} height="100%" fillRule='evenodd' clipRule='evenodd' strokeLinejoin='round' strokeMiterlimit='2' viewBox="0 0 512 512" width="100%" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+    <svg onClick={() => window.open('https://www.linkedin.com/in/froilan-aquino-8249a9192/', '_blank')} role='link' aria-label='Link to LinkedIn' className={className} height="100%" fillRule='evenodd' clipRule='evenodd' strokeLinejoin='round' strokeMiterlimit='2' viewBox="0 0 512 512" width="100%" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
       <title>Logo of LinkedIn</title>
       <desc>The LinkedIn logo represents a professional networking platform for connecting professionals, businesses, and job seekers. It features the word &quot;LinkedIn&quot; in a distinct blue font with the letter &quot;in&quot; enclosed in a square. The square symbolizes community, integrity, and reliability. Clicking on this logo will redirect you to mu LinkedIn profile where you can connect and send me a message whenever you have a project.</desc>
       <path d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm-80.037,399.871l0,-199.921l-66.464,0l0,199.921l66.464,0Zm239.62,0l0,-114.646c0,-61.409 -32.787,-89.976 -76.509,-89.976c-35.255,0 -51.047,19.389 -59.889,33.007l0,-28.306l-66.447,0c0.881,18.757 0,199.921 0,199.921l66.446,0l0,-111.65c0,-5.976 0.43,-11.95 2.191,-16.221c4.795,-11.935 15.737,-24.299 34.095,-24.299c24.034,0 33.663,18.34 33.663,45.204l0,106.966l66.45,0Zm-272.403,-296.321c-22.74,0 -37.597,14.95 -37.597,34.545c0,19.182 14.405,34.544 36.717,34.544l0.429,0c23.175,0 37.6,-15.362 37.6,-34.544c-0.43,-19.595 -14.424,-34.545 -37.149,-34.545Z"/>
@@ -181,7 +182,7 @@ export const LinkedIn = ({className}: SVGModuleProps) => {
 
 export const Discord = ({className}: SVGModuleProps) => {
   return (
-    <svg role='link' aria-label='Link to my Discord' className={className} enableBackground="new 0 0 512 512" viewBox="0 0 512 512" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+    <svg onClick={() => window.open('https://discord.com/login?redirect_to=%2Flogin%3Fredirect_to%3D%252Fchannels%252F834027432150564875%252F834027432587690005')} role='link' aria-label='Link to my Discord' className={className} enableBackground="new 0 0 512 512" viewBox="0 0 512 512" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
       <title>Logo of Discord</title>
       <desc>The Discord logo represents a popular communication platform for gamers and communities. It features a distinctive white silhouette of a game controller on a vibrant purple background. The game controller represents the platform&apos;s focus on providing a seamless and immersive voice, video, and text communication experience for gamers and communities worldwide. Clicking on this logo will redirect you to my Discord Server where you can communicate with me.</desc>
       <circle cx="256" cy="256" className='fill-black' r="256"/>
