@@ -2,23 +2,31 @@ import Link from 'next/link'
 import React from 'react'
 import TechStack from '../components/TechStack/TechStack'
 
+export const metadata = {
+  title: 'About | Froilan | Software Engineer',
+  description: 'Personal Website of Froilan',
+}
+
 const About = () => {
   return (
     <>
       <div className='
       w-[95%]
       md:w-[90%]
+      lg:w-[80%]
+      xl:w-[70%]
       flex
       flex-col
-      gap-y-5
-      justify-center
-      items-center'>
+      gap-y-10
+      justify-start
+      items-start'>
         <h1 className='
         font-bold
-        text-xl'>About</h1>
-        <div className='flex flex-col w-full gap-5'>
-          <div className='gap-5 flex flex-col'>
-            <h1 className='font-medium text-sm'>Hi, I&apos;m Froilan Aquino, currently living in Bagong Silang, Caloocan City, Meytro Manila, Philippines! I&apos;m a full-stack developer/engineer, and I develop and leverage JavaScript, Python, and MySQL.</h1>
+        text-xl
+        lg:text-[70px]'>About</h1>
+        <div className='flex flex-col lg:flex-row w-full gap-5'>
+          <div className='gap-5 flex lg:w-1/4 flex-col'>
+            <h1 className='font-medium text-sm'>Hi, I&apos;m Froilan Aquino, currently living in Bagong Silang, Caloocan City, Metro Manila, Philippines! I&apos;m a full-stack developer/engineer, I develop and leverage JavaScript, Python, and MySQL, and i am a technology enthusiast.</h1>
             <div>
               <h1 className='font-semibold'>Contact</h1>
               <p className='text-sm'>You have any inquiries? Feel free to <Link className='underline text-gray-400 font-bold' href='mailto:froilanaquino1@gmail.com' target='_blank'>contact</Link> me at:</p>
