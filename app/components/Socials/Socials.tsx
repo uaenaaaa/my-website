@@ -7,6 +7,11 @@ import {
 } from 'react-icons/ai'
 import Toggler from '../Toggler/Toggler'
 
+export const metadata = {
+  title: 'Socials | Froilan | Software Engineer',
+  description: 'Personal Website of Froilan',
+}
+
 const Socials = ({}) => {
   return (
     <>
