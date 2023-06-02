@@ -54,7 +54,7 @@ const TechStack = () => {
     <>
       <div className='w-full flex gap-y-3 items-center flex-start flex-col justify-center'>
         <h1 className='font-semibold'>My TechStack</h1>
-        <div className='grid w-full lg:w-full p-4 gap-7 lg:grid-cols-4 grid-cols-3'>
+        <div className='grid w-full md:w-[90%] lg:w-full p-4 gap-7 lg:grid-cols-4 grid-cols-3'>
           {TechStackSVG.map((svg, index) => (
             <div className='grid bg-[#A47551] p-3 rounded-xl justify-center items-center' key={svg.id}>
               {svg.component}
