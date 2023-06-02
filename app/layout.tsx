@@ -1,11 +1,12 @@
 import './globals.css'
+import { Josefin_Sans } from 'next/font/google'
 import { Poppins } from 'next/font/google'
 import NavBar from './components/NavigationBar/NavBar'
 import NavBarSmall from './components/NavigationBar/NavBarSmall'
 import { Analytics } from '@vercel/analytics/react';
 import Providers from './components/ThemeProvider';
 
-const poppins = Poppins(
+const JS = Josefin_Sans(
   { 
     weight: [
       '400',
@@ -31,11 +32,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={
-        `${poppins.className}
+        `${JS.className}
         gap-5
+        md:gap-8
+        lg:gap-14
         pt-4
-        md:pt-6
-        xl:pt-10
+        md:pt-8
+        lg:pt-11
+        xl:pt-14
         w-full
         justify-center
         flex
