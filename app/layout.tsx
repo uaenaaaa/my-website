@@ -1,12 +1,11 @@
 import './globals.css'
-import { Josefin_Sans } from 'next/font/google'
-import { Poppins } from 'next/font/google'
+import { Nunito_Sans } from 'next/font/google'
 import NavBar from './components/NavigationBar/NavBar'
 import NavBarSmall from './components/NavigationBar/NavBarSmall'
 import { Analytics } from '@vercel/analytics/react';
 import Providers from './components/ThemeProvider';
 
-const JS = Josefin_Sans(
+const font = Nunito_Sans(
   { 
     weight: [
       '400',
@@ -32,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={
-        `${JS.className}
+        `${font.className}
         gap-5
         md:gap-8
         lg:gap-14
