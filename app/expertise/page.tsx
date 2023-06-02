@@ -1,5 +1,9 @@
-'use client'
 import React from 'react'
+
+export const metadata = {
+  title: 'Expertise | Froilan | Software Engineer',
+  description: 'Personal Website of Froilan',
+}
 
 const Expertise = ({}) => {
   return (
@@ -13,9 +17,7 @@ const Expertise = ({}) => {
       justify-center
       items-center'>
         <h1>Expertise</h1>
-
         <div>
-
         </div>
       </div>
     </>
