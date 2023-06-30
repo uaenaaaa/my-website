@@ -149,7 +149,6 @@ export const TailWindCSS = ({ className }: SVGModuleProps) => {
   )
 }
 
-
 export const Instagram = ({ className }: SVGModuleProps) => {
   return (
     <svg role='link' aria-label='Link to Instagram' className={className} fillRule='evenodd' clipRule='evenodd'strokeLinejoin='round' strokeMiterlimit='2' viewBox="0 0 512 512" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
