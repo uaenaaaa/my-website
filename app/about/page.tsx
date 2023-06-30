@@ -50,7 +50,7 @@ const About = () => {
                 In my self-taught programmer session, I used platforms like YouTube and freecodecamp to learn UI/UX design since I&apos;m also interested in designing. I also used Udemy, EdX, and Coursera to learn something new and to add to my knowledge of programming. I also used platforms like Medium and Dev.to to read articles about programming and learn something new. I also used platforms like Stackoverflow and GitHub to read questions and learn something new. Right now, I&apos;m currently planning on getting certified in the Google UI/UX certification program through CourseEra.
                 </h1>
                 <h1>
-                  When &apos;'m not coding, I tend to read English books to hone my proficiency and expand my vocabulary. I also watch emerging technology-related videos to keep myself up-to-date with the latest technology trends.
+                  When I&apos;m not coding, I tend to read English books to hone my proficiency and expand my vocabulary. I also watch emerging technology-related videos to keep myself up-to-date with the latest technology trends.
                 </h1>
               </div>
               <TechStack />
