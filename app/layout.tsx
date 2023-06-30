@@ -1,11 +1,11 @@
 import './globals.css'
-import { Nunito_Sans } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import NavBar from './components/NavigationBar/NavBar'
 import NavBarSmall from './components/NavigationBar/NavBarSmall'
 import { Analytics } from '@vercel/analytics/react';
 import Providers from './components/ThemeProvider';
 
-const font = Nunito_Sans(
+const font = Inter(
   { 
     weight: [
       '400',
