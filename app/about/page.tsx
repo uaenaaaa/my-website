@@ -31,7 +31,7 @@ const About = () => {
           <div className='gap-5 flex lg:w-1/4 flex-col'>
             <h1 className='font-semibold text-sm'>Hi, I&apos;m Froilan Aquino, currently living in Bagong Silang, Caloocan City, Metro Manila, Philippines! I&apos;m a full-stack developer/engineer, I develop and leverage JavaScript, Python, and MySQL, and i am a technology enthusiast.</h1>
             <div>
-              <h1 className='font-bold'>Contact</h1>
+              <h1 className='font-bold text-2xl'>Contact</h1>
               <p className='text-sm'>You have any inquiries? Feel free to <Link className='underline text-gray-400 font-bold' href='mailto:froilanaquino1@gmail.com' target='_blank'>contact</Link> me at:</p>
               <p className='text-sm'>froilanaquino1@gmail.com</p>
             </div>
