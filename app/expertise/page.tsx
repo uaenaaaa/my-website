@@ -2,7 +2,7 @@ import React from 'react'
 import Ping from '../components/Ping'
 
 export const metadata = {
-  title: 'Expertise | Froilan | Software Engineer',
+  title: 'Expertise - Froilan | Software Engineer',
   description: 'Personal Website of Froilan',
 }
 
