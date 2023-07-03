@@ -3,7 +3,7 @@ import React from 'react'
 import TechStack from '../components/TechStack/TechStack'
 
 export const metadata = {
-  title: 'About | Froilan | Software Engineer',
+  title: 'About - Froilan | Software Engineer',
   description: 'Personal Website of Froilan',
 }
 
