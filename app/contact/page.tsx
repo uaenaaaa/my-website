@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  AiFillDribbbleCircle,
   AiFillGithub,
   AiFillInstagram,
   AiFillLinkedin,
@@ -8,6 +7,11 @@ import {
 } from 'react-icons/ai'
 import { FaDiscord } from 'react-icons/fa'
 import { CgFigma } from 'react-icons/cg'
+import Head from 'next/head'
+
+export const metadata = {
+  title: 'Contacts - Froilan | Software Engineer'
+}
 
 const Contacts = () => {
   
