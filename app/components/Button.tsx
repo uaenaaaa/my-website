@@ -4,7 +4,6 @@ interface ButtonProps {
   text: string,
   onClick?: React.MouseEventHandler<HTMLButtonElement>,
   className?: string,
-
 }
 
 const Button: FC<ButtonProps> = ({text, onClick, className}) => {

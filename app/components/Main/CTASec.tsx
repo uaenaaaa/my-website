@@ -1,6 +1,6 @@
+'use client'
 import React from 'react'
-import Arrow from '../../../public/images/arrow.png'
-import Image from 'next/image'
+import Button from '../Button'
 
 const CTASec = () => {
   return (
@@ -8,16 +8,23 @@ const CTASec = () => {
       <div className='
         w-full
         flex
-        flex-row
+        flex-col
         justify-center
-        relative'>
-        <div className='w-3/4'>
-          <h1 className='font-bold'>Hi! I&apos;m Froilan,</h1>
+        relative
+        gap-10
+        items-left'>
+        <div className='
+          w-3/4
+          flex
+          justify-center
+          flex-col
+          items-left'>
+          <h1 className='font-bold text-3xl'>Hi! I&apos;m Froilan,</h1>
           <p className='text-xs md:hidden'>Software Developer Based In</p>
           <p className='text-xs md:hidden'>Caloocan Philippines</p>
           <p className='text-xs hidden md:block'>Software Developer Based In Caloocan Philippines</p>
         </div>
-          <Image className='w-1/4 absolute top-[-35%] left-[65%]' src={ Arrow } alt='Arrow Illustration'/>
+        <Button className={'p-2 rounded-md text-1xl bg-black w-1/3 text-white'} onClick={() => {window.open('https://discord.gg/6Tfcg6Ta8N', "_blank")}} text='HMU on Discord'/>
       </div>
     </>
   )
