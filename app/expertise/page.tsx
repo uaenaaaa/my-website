@@ -40,7 +40,7 @@ const Expertise = ({}) => {
             rounded-lg
             w-full
             p-5'>
-              <h1 className='text-black'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cupiditate obcaecati natus. Eligendi labore est culpa, maiores minus accusantium sunt. Officia laborum ipsa laudantium vel quasi quas deserunt unde laboriosam ad recusandae praesentium nam culpa mollitia molestias iste, quod placeat optio inventore? Id laboriosam reiciendis officiis tempore? Neque, aliquid? Cumque.</h1>
+              <h1 className='text-black'>I am an expert in the field of information and communication technology (ICT), and I love it. I earned my NC-II license in 2021 while I was a senior in high school, demonstrating my proficiency in this area. I developed my skills in a variety of concentrations while focusing on my specialty strand in ICT. In order to provide outstanding visual content, I started dabbling in the field of visual graphic design in grade 11. I concentrated on computer hardware and networking in grade 12, learning useful skills for configuring and managing computer systems. I maintained a stellar academic record during the course of the two years, earning an average grade of 92. With such an amazing history, I am sure that I will be able to contribute my creativity, technical expertise, and commitment to any ICT/IT project I embark on.</h1>
             </div>
             <Ping />
           </div>
