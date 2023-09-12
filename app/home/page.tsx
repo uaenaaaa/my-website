@@ -1,6 +1,8 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection'
 import ProjectsSection from '../components/Projects/ProjectsSection'
+import CertificationSection from '../components/Certification/CertificationSection'
+import FooterSection from '../components/Footer/FooterSection'
 
 const HomePage = ({}) => {
   return (
@@ -16,6 +18,8 @@ const HomePage = ({}) => {
       justify-center'>
         <HeroSection />
         <ProjectsSection />
+        <CertificationSection />
+        <FooterSection />
       </div>
     </>
   )
