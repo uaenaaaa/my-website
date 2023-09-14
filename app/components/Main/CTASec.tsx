@@ -24,7 +24,8 @@ const CTASec = () => {
           <p className='text-xs md:hidden'>Caloocan Philippines</p>
           <p className='text-xs hidden md:block'>Software Developer Based In Caloocan Philippines</p>
         </div>
-        <Button className={'p-2 rounded-md text-1xl bg-black w-1/3 text-white'} onClick={() => {window.open('https://discord.gg/6Tfcg6Ta8N', "_blank")}} text='HMU on Discord'/>
+        <Button 
+        className={'p-2 rounded-md text-1xl bg-black w-full md:w-3/4 lg:w-3/5 text-white dark:bg-white dark:text-black'} onClick={() => {window.open('https://discord.gg/6Tfcg6Ta8N', "_blank")}} text='Join me on Discord'/>
       </div>
     </>
   )
