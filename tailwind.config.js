@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      transitionDuration: {
+        '5000': '5000ms',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
