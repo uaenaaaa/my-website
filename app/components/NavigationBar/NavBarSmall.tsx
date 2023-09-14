@@ -38,6 +38,8 @@ const NavBarSmall = () => {
             text-white
             text-[7px]
             bg-black
+            dark:bg-white
+            dark:text-black
             p-[5px]' text='My Projects'/>
         </div>
       </div>
