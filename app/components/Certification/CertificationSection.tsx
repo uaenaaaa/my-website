@@ -75,7 +75,7 @@ const CertificationSection = () => {
             </div>
           )
         })
-      }p[-]
+      }
       </div>
     </>
   )
