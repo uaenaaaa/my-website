@@ -7,19 +7,19 @@ export const certLists = [
   },
   {
     id: 2,
-    title: 'Introduction To CSS',
+    title: 'Intro To CSS',
     description: 'TESDA Philippines',
     link: 'https://drive.google.com/file/d/1EF4D8QAUxrG5Arlft3V9neKnZisYR96n/view?usp=drive_link'
   },
   {
     id: 3,
-    title: 'Introduction To Python',
+    title: 'Intro To Python',
     description: 'SoloLearn',
     link: 'https://drive.google.com/file/d/1Hf7SbkfJspb7FfqO4SE585e2GKlrcWxq/view?usp=drive_link'
   },
   {
     id: 4,
-    title: 'Introduction to SQL',
+    title: 'Intro to SQL',
     description: 'SoloLearn',
     link: 'https://drive.google.com/file/d/1HdyfGti1Vb9WQxmqqynDn1UQdLzZ905b/view?usp=sharing'
   },

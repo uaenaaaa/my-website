@@ -36,11 +36,11 @@ const NavBarSmall = () => {
           <Button className='rounded-lg
             w-3/4
             text-white
-            text-[7px]
+            text-sm
             bg-black
             dark:bg-white
             dark:text-black
-            p-[5px]' text='My Projects'/>
+            p-[5px]' text='Projects'/>
         </div>
       </div>
     </>

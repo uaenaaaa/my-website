@@ -14,7 +14,8 @@ const CertificationSection = () => {
         text-left
         self-start
         font-bold
-        text-4xl'>Certifications</h1>
+        text-xl
+        lg:text-4xl'>Certifications</h1>
       </div>
       <div className='
       xs:w-[95%]
@@ -36,7 +37,7 @@ const CertificationSection = () => {
             flex
             flex-row
             justify-between
-            p-1
+            p-2
             sm:p-1
             md:p-2
             lg:p-3
@@ -64,6 +65,7 @@ const CertificationSection = () => {
                   text-ellipsis'>{cert.title}</h1>
                   <p className='
                   dark:text-black
+                  text-xs
                   text-white
                   text-left
                   '>{cert.description}</p>
