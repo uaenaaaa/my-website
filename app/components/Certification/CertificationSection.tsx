@@ -4,11 +4,12 @@ import { certLists } from './CertificationsListPrevHome'
 
 const CertificationSection = () => {
   return(
-    <>
+    <div>
       <div className='
       w-full
       flex
       flex-col
+      pb-3
       items-center'>
         <h1 className='
         text-left
@@ -79,7 +80,7 @@ const CertificationSection = () => {
         })
       }
       </div>
-    </>
+    </div>
   )
 }
 
