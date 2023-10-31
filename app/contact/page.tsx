@@ -7,7 +7,6 @@ import {
 } from 'react-icons/ai'
 import { FaDiscord } from 'react-icons/fa'
 import { CgFigma } from 'react-icons/cg'
-import Head from 'next/head'
 
 export const metadata = {
   title: 'Contacts - Froilan | Software Engineer'
@@ -27,7 +26,9 @@ const Contacts = () => {
       items-center'>
         <h1 className='
         font-bold
-        text-xl'>My Contacts</h1>
+        self-start
+        text-xl
+        lg:text-4xl'>My Contacts</h1>
         <div className='
         w-full
         flex
@@ -130,7 +131,7 @@ const Contacts = () => {
           items-center
           gap-x-3'>
             <AiFillGithub />
-            <h1>GitHub - @flcmm</h1>
+            <h1>GitHub - @froilaaaaan1</h1>
           </div>
         </div>
       </div>

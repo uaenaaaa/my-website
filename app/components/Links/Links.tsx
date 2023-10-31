@@ -14,7 +14,8 @@ const Links = ({}) => {
       <div className='
       flex
       flex-row
-      justify-between
+      justify-start
+      gap-5
       items-center
       w-full
       md:w-1/4
