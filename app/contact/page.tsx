@@ -21,14 +21,16 @@ const Contacts = () => {
       md:w-[90%]
       flex
       flex-col
-      gap-y-5
+      gap-y-10
       justify-center
       items-center'>
         <h1 className='
         font-bold
         self-start
-        text-xl
-        lg:text-4xl'>My Contacts</h1>
+        text-3xl
+        md:text-[50px]
+        lg:text-[70px]
+        xl:text-[90px]'>My Contacts</h1>
         <div className='
         w-full
         flex
@@ -45,7 +47,7 @@ const Contacts = () => {
             flex-col
             w-full
             justify-start
-            gap-y-2'>
+            gap-y-4'>
               <div className='
               flex
               flex-row
