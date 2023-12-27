@@ -1,12 +1,4 @@
 import React from 'react'
-import {
-  AiFillGithub,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiFillPhone
-} from 'react-icons/ai'
-import { FaDiscord } from 'react-icons/fa'
-import { CgFigma } from 'react-icons/cg'
 
 export const metadata = {
   title: 'Contacts - Froilan | Software Engineer'
@@ -19,123 +11,43 @@ const Contacts = () => {
       <div className='
       w-[95%]
       md:w-[90%]
+      lg:w-[80%]
+      xl:w-[70%]
       flex
       flex-col
-      gap-y-10
-      justify-center
-      items-center'>
+      gap-10
+      justify-start
+      items-start'>
         <h1 className='
         font-bold
         self-start
         text-3xl
         md:text-[50px]
         lg:text-[70px]
-        xl:text-[90px]'>My Contacts</h1>
+        xl:text-[90px]'>Contact</h1>
+        
         <div className='
-        w-full
+        drop-shadow-2xl
+        border-2
+        bg-white
+        p-5
+        md:p-7
+        lg:p-10
+        rounded-2xl
+        gap-5
         flex
-        flex-col'>
-          <div className='
-          justify-start
-          flex
-          flex-col
-          w-full
-          gap-y-2'>
-            <h1 className='font-semibold'>Phones & Socials</h1>
-            <div className='
-            flex
-            flex-col
-            w-full
-            justify-start
-            gap-y-4'>
-              <div className='
-              flex
-              flex-row
-              w-full
-              justify-start
-              items-center
-              gap-x-3'>
-                <AiFillPhone />
-                <h1>- +639060162213</h1>
-              </div>
-              <div className='
-              flex
-              flex-row
-              w-full
-              justify-start
-              items-center
-              gap-x-3'>
-                <FaDiscord />
-                <h1>- @frln_cm #2835</h1>
-              </div>
-              <div className='
-              flex
-              flex-row
-              w-full
-              justify-start
-              items-center
-              gap-x-3'>
-                <AiFillLinkedin />
-                <h1>- @froilan-aquino-8249a9192</h1>
-              </div>
-              <div className='
-              flex
-              flex-row
-              w-full
-              justify-start
-              items-center
-              gap-x-3'>
-                <AiFillInstagram />
-                <h1>- @frln_cm</h1>
-              </div>
-            </div>
-          </div>
+        flex-col
+        w-full'>
+          <h3 className='
+          font-bold
+          text-xl
+          md:text-3xl
+          lg:text-4xl
+          xl:text-5xl'>Let&apos;s Get in touch!</h3>
+          <p>Feel at liberty to reach out to me via <a className='font-bold' href='mailto:froilanaquino1@gmail.com'>email</a>.</p>
+          <p>froilanaquino1@gmail.com</p>
         </div>
-
-        <div className='
-          justify-start
-          flex
-          flex-col
-          w-full
-          gap-y-2'>
-          <h1 className='font-semibold'>My Designs</h1>
-          <div className='
-            flex
-            flex-col
-            w-full
-            justify-start
-            gap-y-2'>
-            <div className='
-              flex
-              flex-row
-              w-full
-              justify-start
-              items-center
-              gap-x-3'>
-              <CgFigma />
-              <h1>Figma - @frln</h1>
-            </div>
-          </div>
-        </div>
-
-        <div className='
-          justify-start
-          flex
-          flex-col
-          w-full
-          gap-x-3'>
-          <h1 className='font-semibold'>My Work&apos;s source code</h1>
-          <div className='
-          flex
-          flex-row
-          w-full
-          justify-start
-          items-center
-          gap-x-3'>
-            <AiFillGithub />
-            <h1>GitHub - @froilaaaaan1</h1>
-          </div>
-        </div>
+        
       </div>
     </>
   )

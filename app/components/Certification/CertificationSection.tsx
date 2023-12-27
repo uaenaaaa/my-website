@@ -19,11 +19,7 @@ const CertificationSection = () => {
         lg:text-4xl'>Certifications</h1>
       </div>
       <div className='
-      xs:w-[95%]
-      sm:w-[90%]
-      md:w-[85%]
-      lg:w-[80%]
-      xl:w-3/4
+      w-full
       grid
       grid-rows-2
       grid-cols-2

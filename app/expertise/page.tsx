@@ -22,6 +22,7 @@ const Expertise = ({}) => {
         <h1 className='
         font-bold
         text-3xl
+        pb-1
         text-left
         lg:font-extrabold
         md:text-[50px]
