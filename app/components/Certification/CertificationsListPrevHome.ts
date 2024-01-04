@@ -23,4 +23,16 @@ export const certLists = [
     description: 'SoloLearn',
     link: 'https://drive.google.com/file/d/1HdyfGti1Vb9WQxmqqynDn1UQdLzZ905b/view?usp=sharing'
   },
+  {
+    id: 5,
+    title: 'Cybersecurity Fundamentals',
+    description: 'IBM SkillsBuild',
+    link: 'https://www.credly.com/badges/df3fb8e7-abea-4715-a3d4-1c1c3857d32b/public_url'
+  },
+  {
+    id: 6,
+    title: 'Artificial Int. Fundamentals',
+    description: 'IBM SkillsBuild',
+    link: 'https://www.credly.com/badges/d77f5665-8275-4a53-acf4-edf0405f1473/public_url'
+  }
 ]
