@@ -49,6 +49,15 @@ const Contacts = () => {
           xl:text-5xl'>Let&apos;s Get in touch!</h3>
           <p className='dark:text-black'>Feel at liberty to reach out to me via <a className='font-bold' href='mailto:froilanaquino1@gmail.com'>email</a>.</p>
           <p className='dark:text-black'>froilanaquino1@gmail.com</p>
+
+          <button className='
+          bg-black
+          dark:bg-white
+          w-1/5
+          text-white
+          p-3
+          rounded-xl
+          '>GET MY CV</button>
         </div>
         
       </div>
