@@ -38,6 +38,7 @@ const Expertise = ({}) => {
           relative'>
             <div className='
             bg-white
+            drop-shadow-2xl
             rounded-lg
             w-full
             p-5'>
