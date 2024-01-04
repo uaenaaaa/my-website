@@ -4,7 +4,7 @@ import { certLists } from './CertificationsListPrevHome'
 
 const CertificationSection = () => {
   return(
-    <div>
+    <>
       <div className='
       w-full
       flex
@@ -76,7 +76,7 @@ const CertificationSection = () => {
         })
       }
       </div>
-    </div>
+    </>
   )
 }
 

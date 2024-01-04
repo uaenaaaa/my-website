@@ -10,6 +10,8 @@ const HomePage = ({}) => {
       <div className='
       w-[95%]
       md:w-[90%]
+      lg:w-[80%]
+      xl:w-[75%]
       gap-y-10
       flex
       pt-5
