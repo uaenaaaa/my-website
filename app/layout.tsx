@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import NavBar from '../components/NavigationBar/NavBar';
 import NavBarSmall from '../components/NavigationBar/NavBarSmall';
 import { Analytics } from '@vercel/analytics/react';
-import Providers from './components/ThemeProvider';
+import { ThemeProvider } from '@/app/ThemeProvider';
 
 const font = Inter({
 	weight: ['400', '500', '600', '700'],
@@ -29,19 +29,24 @@ export default function RootLayout({
         md:gap-8
         lg:gap-14
         pt-4
+				min-h-screen
         md:pt-8
         lg:pt-11
         xl:pt-14
         w-full
-        justify-center
+        justify-start
         flex
         flex-col
         items-center`}>
-				<Providers>
+				<ThemeProvider
+					attribute='class'
+					defaultTheme='system'
+					enableSystem
+					disableTransitionOnChange>
 					<NavBar />
 					<NavBarSmall />
 					{children}
-				</Providers>
+				</ThemeProvider>
 				<Analytics />
 			</body>
 		</html>

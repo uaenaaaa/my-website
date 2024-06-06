@@ -1,29 +1,41 @@
-"use client"
-import React, { useEffect, useState } from "react"
-import { FiSun, FiMoon } from "react-icons/fi"
-import { useTheme } from "next-themes"
+'use client';
 
-const Toggler = () => {
-  const [ mounted, setMounted ] = useState(false)
-  const { theme, setTheme } = useTheme()
-  useEffect(() => {
-    setMounted(true)
-  }, [])
+import * as React from 'react';
+import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
+import { useTheme } from 'next-themes';
+import { Button } from '@/components/ui/button';
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
-  if (!mounted) {
-    return null
-  }
+export function ModeToggle() {
+	const { setTheme } = useTheme();
 
-  const light = theme === "light"
-  return (
-    <button className="">
-      {light ? (
-        <FiMoon onClick={() => setTheme("dark")} />
-      ) : (
-        <FiSun onClick={() => setTheme("light")} />
-      )}
-    </button>
-  )
+	return (
+		<DropdownMenu>
+			<DropdownMenuTrigger asChild>
+				<Button
+					variant='ghost'
+					size='icon'>
+					<SunIcon className='w-6 h-6 md:w-7 md:h-7 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0' />
+					<MoonIcon className='absolute w-6 h-6 md:w-7 md:h-7 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100' />
+					<span className='sr-only'>Toggle theme</span>
+				</Button>
+			</DropdownMenuTrigger>
+			<DropdownMenuContent align='end'>
+				<DropdownMenuItem onClick={() => setTheme('light')}>
+					Light
+				</DropdownMenuItem>
+				<DropdownMenuItem onClick={() => setTheme('dark')}>
+					Dark
+				</DropdownMenuItem>
+				<DropdownMenuItem onClick={() => setTheme('system')}>
+					System
+				</DropdownMenuItem>
+			</DropdownMenuContent>
+		</DropdownMenu>
+	);
 }
-
-export default Toggler

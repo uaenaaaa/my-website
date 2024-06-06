@@ -1,8 +1,8 @@
 import React from 'react';
-import Logo from '../logo';
+import Logo from '@/components/logo';
 import Links from '../../app/components/Links/Links';
-import Socials from '../../app/components/Socials/Socials';
-import Button from '../../app/components/Button';
+import Socials from './Socials';
+import { Button } from '@/components/ui/button';
 
 const NavBarSmall = () => {
 	return (
@@ -44,9 +44,9 @@ const NavBarSmall = () => {
             bg-black
             dark:bg-white
             dark:text-black
-            p-[5px]'
-						text='Projects'
-					/>
+            p-[5px]'>
+						About Me
+					</Button>
 				</div>
 			</div>
 		</>
