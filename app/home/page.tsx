@@ -1,13 +1,14 @@
-import React from 'react'
-import HeroSection from '../components/HeroSection'
-import ProjectsSection from '../components/Projects/ProjectsSection'
-import CertificationSection from '../components/Certification/CertificationSection'
-import FooterSection from '../components/Footer/FooterSection'
+import React from 'react';
+import HeroSection from '../components/HeroSection';
+import ProjectsSection from '../components/Projects/ProjectsSection';
+import CertificationSection from '../components/Certification/CertificationSection';
+import FooterSection from '../components/Footer/FooterSection';
 
 const HomePage = ({}) => {
-  return (
-    <>
-      <div className='
+	return (
+		<>
+			<div
+				className='
       w-[95%]
       md:w-[90%]
       lg:w-[80%]
@@ -18,13 +19,12 @@ const HomePage = ({}) => {
       flex-col
       items-center
       justify-center'>
-        <HeroSection />
-        <ProjectsSection />
-        <CertificationSection />
-        <FooterSection />
-      </div>
-    </>
-  )
-}
+				<HeroSection />
+				<CertificationSection />
+				<FooterSection />
+			</div>
+		</>
+	);
+};
 
-export default HomePage
+export default HomePage;

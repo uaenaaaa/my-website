@@ -1,37 +1,30 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-import NavBar from './components/NavigationBar/NavBar'
-import NavBarSmall from './components/NavigationBar/NavBarSmall'
+import './globals.css';
+import { Inter } from 'next/font/google';
+import NavBar from '../components/NavigationBar/NavBar';
+import NavBarSmall from '../components/NavigationBar/NavBarSmall';
 import { Analytics } from '@vercel/analytics/react';
 import Providers from './components/ThemeProvider';
 
-const font = Inter(
-  { 
-    weight: [
-      '400',
-      '500',
-      '600',
-      '700'
-    ],
-    style: 'normal',
-    subsets: ['latin']
-  },
-)
+const font = Inter({
+	weight: ['400', '500', '600', '700'],
+	style: 'normal',
+	subsets: ['latin'],
+});
 
 export const metadata = {
-  title: 'Froilan | Software Engineer',
-  description: 'Personal Website of Froilan',
-}
+	title: 'Froilan | Software Engineer',
+	description: 'Personal Website of Froilan',
+};
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode
+	children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body className={
-        `${font.className}
+	return (
+		<html lang='en'>
+			<body
+				className={`${font.className}
         gap-5
         md:gap-8
         lg:gap-14
@@ -44,13 +37,13 @@ export default function RootLayout({
         flex
         flex-col
         items-center`}>
-        <Providers>
-          <NavBar/>
-          <NavBarSmall/>
-          {children}
-        </Providers>
-        <Analytics />
-      </body>
-    </html>
-  )
+				<Providers>
+					<NavBar />
+					<NavBarSmall />
+					{children}
+				</Providers>
+				<Analytics />
+			</body>
+		</html>
+	);
 }
