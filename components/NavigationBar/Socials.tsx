@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { ModeToggle } from '@/app/components/Toggler/Toggler';
+import { ThemeToggler } from '@/components/ThemeToggler';
 import {
 	Tooltip,
 	TooltipContent,
@@ -94,7 +94,7 @@ const Instagram = () => {
 
 const Socials = () => {
 	return (
-		<div className='flex flex-row md:w-1/4 lg:w-1/4 xl:w-[15%] w-full justify-end gap-10 items-center'>
+		<div className='flex flex-row md:w-1/5 lg:w-1/4 xl:w-[15%] w-1/8 justify-end gap-5 items-center'>
 			<TooltipProvider>
 				<Tooltip>
 					<TooltipTrigger asChild>
@@ -134,7 +134,7 @@ const Socials = () => {
 						<p>@froilanimnida</p>
 					</TooltipContent>
 				</Tooltip>
-				<ModeToggle />
+				<ThemeToggler />
 			</TooltipProvider>
 		</div>
 	);

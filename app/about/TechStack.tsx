@@ -106,7 +106,7 @@ const TechStack = () => {
 								</Link>
 							</HoverCardTrigger>
 							<HoverCardContent className='w-80'>
-								<div className='flex justify-between space-x-4'>
+								<div className='flex justify-between items-center space-x-4'>
 									{tech.component}
 									<div className='space-y-1'>
 										<p className='text-sm'>{tech.content}</p>

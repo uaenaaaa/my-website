@@ -16,44 +16,58 @@ export const metadata = {
 
 const Contacts = () => {
 	return (
-		<Card
+		<div
 			className='
-      w-[95%]
-      md:w-[90%]
-      lg:w-[80%]
-      xl:w-[50%]
-      flex
-      flex-col
-      gap-10
-      justify-start
-      items-start'>
-			<CardHeader>
-				<CardTitle
-					className='font-bold
-                self-start
-                text-3xl
-                lg:font-extrabold
-                md:text-5xl
-                lg:text-7xl'>
-					Contact
-				</CardTitle>
-				<CardDescription>
-					Feel at liberty to reach out to me via{' '}
-					<Link
-						className='font-bold'
-						href='mailto:froilanaquino1@gmail.com'>
-						email
-					</Link>
-					.
-				</CardDescription>
-			</CardHeader>
-			<CardContent>
-				<h1>froilanaquino1@gmail.com</h1>
-			</CardContent>
-			<CardFooter>
-				<Button>GET MY CV</Button>
-			</CardFooter>
-		</Card>
+				w-[95%]
+				md:w-[90%]
+				lg:w-[80%]
+				xl:w-[70%]
+				flex
+				flex-col
+				gap-2
+				justify-start
+				items-start'>
+			<h1
+				className='
+					font-bold
+					text-3xl
+					lg:font-extrabold
+					md:text-4xl
+					lg:text-5xl
+					xl:text-8xl'>
+				Contact
+			</h1>
+			<Card
+				className='
+					w-[95%]
+					md:w-[90%]
+					lg:w-[80%]
+					xl:w-[50%]
+					flex
+					flex-col
+					gap-10
+					justify-start
+					items-start'>
+				<CardHeader>
+					<CardTitle>Contact me via email</CardTitle>
+				</CardHeader>
+				<CardContent>
+					<h1>
+						Feel at liberty to reach out to me via{' '}
+						<Link
+							className='font-bold text-primary'
+							href='mailto:froilanaquino1@gmail.com'>
+							email
+						</Link>
+						.
+					</h1>
+					<h1 className='text-primary'>froilanaquino1@gmail.com</h1>
+				</CardContent>
+				<CardFooter>
+					<Button>GET MY CV</Button>
+				</CardFooter>
+			</Card>
+		</div>
 	);
 };
 

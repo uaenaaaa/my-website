@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '@/components/logo';
-import Links from '../../app/components/Links/Links';
+import Links from '@/components/NavigationBar/Links';
 import Socials from './Socials';
 import { Button } from '@/components/ui/button';
 
@@ -36,17 +36,7 @@ const NavBarSmall = () => {
           gap-5
         '>
 					<Socials />
-					<Button
-						className='rounded-lg
-            w-3/4
-            text-white
-            text-sm
-            bg-black
-            dark:bg-white
-            dark:text-black
-            p-[5px]'>
-						About Me
-					</Button>
+					<Button variant={'default'}>About Me</Button>
 				</div>
 			</div>
 		</>

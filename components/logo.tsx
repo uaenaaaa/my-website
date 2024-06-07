@@ -4,13 +4,15 @@ import React from 'react';
 const Logo = () => {
 	return (
 		<>
-			<div className='flex flex-col justify-start start w-full sm:w-[20%]'>
+			<div className='flex flex-col justify-start start sm:w-[1/4]'>
 				<Link
 					href='/'
 					className='font-bold text-lg lg:text-xl'>
 					Froilan
 				</Link>
-				<p className='font-normal text-xs lg:text-sm'>Software Engineer</p>
+				<p className='text-primary font-normal text-sm md:text-base'>
+					Software Engineer
+				</p>
 			</div>
 		</>
 	);

@@ -14,23 +14,23 @@ const About = () => {
 		<>
 			<div
 				className='
-      w-[95%]
-      md:w-[90%]
-      lg:w-[80%]
-      xl:w-[70%]
-      flex
-      flex-col
-			gap-2
-      justify-start
-      items-start'>
+					w-[95%]
+					md:w-[90%]
+					lg:w-[80%]
+					xl:w-[70%]
+					flex
+					flex-col
+					gap-2
+					justify-start
+					items-start'>
 				<h1
 					className='
-        font-bold
-        text-3xl
-        lg:font-extrabold
-        md:text-4xl
-				lg:text-5xl
-				xl:text-8xl'>
+						font-bold
+						text-3xl
+						lg:font-extrabold
+						md:text-4xl
+						lg:text-5xl
+						xl:text-8xl'>
 					About
 				</h1>
 				<div className='flex flex-col lg:flex-row w-full gap-5'>
@@ -46,14 +46,14 @@ const About = () => {
 							<p className='text-sm md:text-base'>
 								You have any inquiries? Feel free to{' '}
 								<Link
-									className='underline text-gray-400 font-bold'
+									className='underline text-primary font-bold'
 									href='mailto:froilanaquino1@gmail.com'
 									target='_blank'>
 									contact
 								</Link>{' '}
 								me at:
 							</p>
-							<p className='text-sm'>froilanaquino1@gmail.com</p>
+							<p className='text-sm text-primary'>froilanaquino1@gmail.com</p>
 						</div>
 					</div>
 					<div className='w-full'>
@@ -98,21 +98,21 @@ const About = () => {
 							</div>
 							<div className='flex w-full flex-col gap-3 md:flex-row'>
 								<NowPlayingWidget />
+							</div>
+							<div className='flex w-full flex-col gap-3 lg:flex-row'>
 								<Image
 									src='https://github-readme-stats.vercel.app/api/wakatime?username=froilanimnida'
 									alt='Wakatime Stats'
 									width={400}
 									height={400}
-									className='w-full md:max-w-[30%]'
+									className='w-full lg:max-w-[30%]'
 								/>
-							</div>
-							<div className='flex w-full flex-col gap-3 md:flex-row'>
 								<Image
 									src='https://github-readme-stats.vercel.app/api/top-langs/?username=froilanimnida&layout=donut'
 									alt='Top Languages'
 									width={400}
 									height={400}
-									className='w-full md:max-w-[30%]'
+									className='w-full lg:max-w-[30%]'
 								/>
 
 								<Image
@@ -122,7 +122,7 @@ const About = () => {
 									alt='GitHub Stats'
 									width={400}
 									height={400}
-									className='w-full md:max-w-[30%]'
+									className='w-full lg:max-w-[30%]'
 								/>
 							</div>
 							<TechStack />
