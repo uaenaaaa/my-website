@@ -52,6 +52,9 @@ export const getNowPlaying = async () => {
 		}
 
 		const song = await response.json();
+		if (!song.item) {
+			throw new Error('Currently Not Playing');
+		}
 		const albumImageUrl = song.item.album.images[0].url;
 		const artist = song.item.artists
 			.map((artist: { name: string }) => artist.name)

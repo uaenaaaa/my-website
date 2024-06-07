@@ -89,7 +89,7 @@ const NowPlayingWidget = () => {
 				</svg>
 			</CardHeader>
 			<CardContent className='flex flex-col w-full'>
-				<div className='flex flex-row w-full justify-center items-center gap-2'>
+				<div className='flex flex-row w-full justify-start items-center gap-2'>
 					{nowPlaying != null ? (
 						nowPlaying.albumImageUrl ? (
 							<Image
@@ -105,12 +105,12 @@ const NowPlayingWidget = () => {
 					) : (
 						<OctagonX />
 					)}
-					<div className='flex flex-col gap-1 max-w-[70%]'>
+					<div className='flex flex-col gap-1 w-3/4 max-w-[75%]'>
 						<h1 className='text-base font-bold overflow-hidden whitespace-nowrap overflow-ellipsis'>
 							{title}
 						</h1>
-						<h1 className='text-sm font-regular'>by {artist}</h1>
-						<div className='flex flex-col gap-2'>
+						<h1 className='text-sm font-regular'>{artist}</h1>
+						<div className='flex flex-col w-full gap-2'>
 							<Progress
 								className='w-full'
 								value={progress}

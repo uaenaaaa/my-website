@@ -29,6 +29,7 @@ export default function RootLayout({
         md:gap-8
         lg:gap-14
         pt-4
+				mb-10
 				min-h-screen
         md:pt-8
         lg:pt-11

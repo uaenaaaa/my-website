@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
 import TechStack from '@/app/about/TechStack';
+import NowPlayingWidget from '@/components/widget/NowPlayingWidget';
+import Image from 'next/image';
 
 export const metadata = {
 	title: 'About - Froilan | Software Engineer',
@@ -18,7 +20,7 @@ const About = () => {
       xl:w-[70%]
       flex
       flex-col
-      gap-y-10
+			gap-2
       justify-start
       items-start'>
 				<h1
@@ -26,22 +28,22 @@ const About = () => {
         font-bold
         text-3xl
         lg:font-extrabold
-        md:text-[50px]
-        lg:text-[70px]
-        xl:text-[90px]'>
+        md:text-4xl
+				lg:text-5xl
+				xl:text-8xl'>
 					About
 				</h1>
 				<div className='flex flex-col lg:flex-row w-full gap-5'>
 					<div className='gap-5 flex lg:w-1/4 flex-col'>
-						<h1 className='font-semibold text-sm'>
+						<h1 className='text-xs md:text-base'>
 							Hi, I&apos;m Froilan Aquino, currently living in Caloocan City,
 							Metro Manila, Philippines! I&apos;m a full-stack
 							developer/engineer, I develop and leverage JavaScript, Python, and
 							MySQL, and i am a technology enthusiast.
 						</h1>
 						<div>
-							<h1 className='font-bold text-2xl'>Contact</h1>
-							<p className='text-sm'>
+							<h1 className='font-bold text-xl'>Contact</h1>
+							<p className='text-sm md:text-base'>
 								You have any inquiries? Feel free to{' '}
 								<Link
 									className='underline text-gray-400 font-bold'
@@ -62,7 +64,7 @@ const About = () => {
                 flex
                 flex-col
                 gap-3'>
-								<h1>
+								<h1 className='text-xs md:text-base'>
 									I develop applications using Javascript frameworks and
 									libraries like React and also use the React&apos;s Framework
 									Next.js, like this website. I used Next.js to create this
@@ -74,7 +76,7 @@ const About = () => {
 									the Google Developer Students Club to learn something new and
 									seek opportunities for my career.
 								</h1>
-								<h1>
+								<h1 className='text-xs md:text-base'>
 									In my self-taught programmer session, I used platforms like
 									YouTube and freecodecamp to and at the same time learning
 									UI/UX design since I&apos;m also interested in designing. I
@@ -87,12 +89,41 @@ const About = () => {
 									getting certified in the Google UI/UX certification program
 									through Coursera.
 								</h1>
-								<h1>
+								<h1 className='text-xs md:text-base'>
 									When I&apos;m not coding, I&apos; reading English books to
 									hone my proficiency and expand my vocabulary. I also watch
 									emerging technology-related videos to keep myself up-to-date
 									with the latest technology trends.
 								</h1>
+							</div>
+							<div className='flex w-full flex-col gap-3 md:flex-row'>
+								<NowPlayingWidget />
+								<Image
+									src='https://github-readme-stats.vercel.app/api/wakatime?username=froilanimnida'
+									alt='Wakatime Stats'
+									width={400}
+									height={400}
+									className='w-full md:max-w-[30%]'
+								/>
+							</div>
+							<div className='flex w-full flex-col gap-3 md:flex-row'>
+								<Image
+									src='https://github-readme-stats.vercel.app/api/top-langs/?username=froilanimnida&layout=donut'
+									alt='Top Languages'
+									width={400}
+									height={400}
+									className='w-full md:max-w-[30%]'
+								/>
+
+								<Image
+									src={
+										'https://github-readme-stats.vercel.app/api?username=froilanimnida&show_icons=true&theme=transparent'
+									}
+									alt='GitHub Stats'
+									width={400}
+									height={400}
+									className='w-full md:max-w-[30%]'
+								/>
 							</div>
 							<TechStack />
 						</div>
