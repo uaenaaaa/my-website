@@ -6,6 +6,7 @@ import FooterSection from '@/app/components/Footer/FooterSection';
 import Me from '@/public/images/me.png';
 import { FaAndroid, FaNodeJs, FaReact } from 'react-icons/fa';
 import Image from 'next/image';
+import NowPlayingWidget from '@/components/widget/NowPlayingWidget';
 
 export default function Home() {
 	return (
@@ -64,8 +65,7 @@ export default function Home() {
 								<p className='text-xs md:hidden'>Software Developer Based In</p>
 								<p className='text-xs md:hidden'>Caloocan Philippines</p>
 								<p className='text-xs hidden md:block'>
-									Software Developer and Cybersecurity Novice Based In Caloocan
-									Philippines
+									Software Developer Based In Caloocan Philippines
 								</p>
 							</div>
 							<Button
@@ -77,6 +77,7 @@ export default function Home() {
 									Join My Discord
 								</Link>
 							</Button>
+							<NowPlayingWidget />
 						</div>
 					</div>
 					<CertificationSection />
