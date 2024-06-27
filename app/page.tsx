@@ -7,9 +7,10 @@ import {
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/card';
+import EmbedCard from '@/components/embed_card';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import Me from '@/public/images/me.png';
+import Me from '@/public/images/me.webp';
 import { FaAndroid, FaNodeJs, FaReact } from 'react-icons/fa';
 import Image from 'next/image';
 import NowPlayingWidget from '@/components/widget/NowPlayingWidget';
@@ -42,12 +43,14 @@ export default function Home() {
 							/>
 							<FaReact
 								size={125}
-								className='absolute duration-15000 animate-spin z-30 top-[50%] left-0 fill-[#62ADFC]'
+								className='absolute duration-20000 animate-spin z-30 top-[50%] left-0 fill-[#62ADFC]'
 							/>
 							<Image
-								priority={true}
-								className='w-3/4 z-10'
+								priority={false}
 								src={Me}
+								quality={50}
+								width={400}
+								height={400}
 								alt='Picture of the Developer'
 							/>
 						</div>
@@ -108,15 +111,15 @@ export default function Home() {
 					</div>
 					<div
 						className='
-							w-3/4
+							w-full
 							grid
-							grid-rows-3
 							grid-cols-1
 							md:grid-cols-2
 							lg:grid-cols-3
 							gap-5
 							sm:gap-3
-							justify-around
+							md:gap-10
+							lg:gap-20
 							'>
 						{certificationsListsPreview.map((cert, index) => {
 							return (
@@ -125,9 +128,13 @@ export default function Home() {
 										<CardTitle>{cert.title}</CardTitle>
 										<CardDescription>{cert.description}</CardDescription>
 									</CardHeader>
-									<CardContent>
-										<Button variant='default'>
-											<Link href={cert.link}>View Certificate</Link>
+									<CardContent className='flex flex-col justify-center items-center'>
+										<EmbedCard badge_id={cert.badge_id} />
+										<Button
+											asChild
+											className='w-full mt-3'
+											variant='default'>
+											<Link href={cert.link}>View</Link>
 										</Button>
 									</CardContent>
 								</Card>

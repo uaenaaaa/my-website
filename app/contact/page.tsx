@@ -2,7 +2,6 @@ import React from 'react';
 import {
 	Card,
 	CardContent,
-	CardDescription,
 	CardFooter,
 	CardHeader,
 	CardTitle,
@@ -64,7 +63,16 @@ const Contacts = () => {
 					<h1 className='text-primary'>froilanaquino1@gmail.com</h1>
 				</CardContent>
 				<CardFooter>
-					<Button>GET MY CV</Button>
+					<Button
+						asChild
+						variant={'default'}>
+						<Link
+							href={
+								'https://drive.google.com/uc?export=download&id=1qJFWnTVrOrhMwf7bmehjFgvQe5BbFe-A'
+							}>
+							Get my CV
+						</Link>
+					</Button>
 				</CardFooter>
 			</Card>
 		</div>

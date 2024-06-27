@@ -15,6 +15,11 @@ const nextConfig = {
 				port: '',
 				pathname: '/api/**',
 			},
+			{
+				protocol: 'https',
+				hostname: 'roadmap.sh',
+				port: '',
+			},
 		],
 	},
 };

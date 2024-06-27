@@ -24,6 +24,10 @@ interface NowPlaying {
 	songUrl: string;
 }
 
+interface NowPlayingProps {
+	className?: string;
+}
+
 const SpotifyIcon = ({ className }: { className: string }) => (
 	<svg
 		className={className}
@@ -37,7 +41,7 @@ const SpotifyIcon = ({ className }: { className: string }) => (
 	</svg>
 );
 
-const NowPlayingWidget = () => {
+const NowPlayingWidget = ({ className }: NowPlayingProps) => {
 	const [nowPlaying, setNowPlaying] = useState<NowPlaying | null>(null);
 
 	useEffect(() => {
@@ -86,7 +90,10 @@ const NowPlayingWidget = () => {
 		progress = (nowPlaying.timePlayed / nowPlaying.timeTotal) * 100;
 	}
 	return (
-		<Card className='w-full'>
+		<Card
+			className={`w-full ${
+				!nowPlaying || !nowPlaying.isPlaying ? 'hidden' : ''
+			} ${className}`}>
 			<CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
 				<CardTitle className='text-sm font-medium'>
 					<span className='font-semibold text-[#1ed760]'>SPOTIFY</span> |
@@ -118,6 +125,7 @@ const NowPlayingWidget = () => {
 						<h1 className='text-sm font-regular'>{artist}</h1>
 						<div className='flex flex-col w-full gap-2'>
 							<Progress
+								aria-label='song progress'
 								className='w-full'
 								value={progress}
 							/>
@@ -136,7 +144,7 @@ const NowPlayingWidget = () => {
 				<CardFooter className='p-0 flex justify-start mt-3'>
 					{nowPlaying != null ? (
 						<Button
-							className='flex flex-row gap-1'
+							className='flex flex-row gap-4'
 							variant='outline'>
 							<SpotifyIcon className='w-6 h-6' />
 							{songUrl ? (

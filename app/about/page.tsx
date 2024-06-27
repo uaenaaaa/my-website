@@ -99,20 +99,20 @@ const About = () => {
 							<div className='flex w-full flex-col gap-3 md:flex-row'>
 								<NowPlayingWidget />
 							</div>
-							<div className='flex w-full flex-col gap-3 lg:flex-row'>
+							<div className='grid w-full grid-rows-2 gap-3 justify-center items-center grid-cols-1 lg:grid-cols-2'>
 								<Image
 									src='https://github-readme-stats.vercel.app/api/wakatime?username=froilanimnida'
 									alt='Wakatime Stats'
-									width={400}
-									height={400}
-									className='w-full lg:max-w-[30%]'
+									width={800}
+									height={800}
+									className='w-11/12 justify-self-center'
 								/>
 								<Image
 									src='https://github-readme-stats.vercel.app/api/top-langs/?username=froilanimnida&layout=donut'
 									alt='Top Languages'
 									width={400}
 									height={400}
-									className='w-full lg:max-w-[30%]'
+									className='w-11/12  justify-self-center'
 								/>
 
 								<Image
@@ -122,7 +122,14 @@ const About = () => {
 									alt='GitHub Stats'
 									width={400}
 									height={400}
-									className='w-full lg:max-w-[30%]'
+									className='w-11/12  justify-self-center'
+								/>
+								<Image
+									src='https://roadmap.sh/card/wide/667cd2ae2028c2d81892c220?variant=light&roadmaps=frontend'
+									alt='Frontend Roadmap'
+									width={400}
+									height={400}
+									className='w-11/12  justify-self-center'
 								/>
 							</div>
 							<TechStack />

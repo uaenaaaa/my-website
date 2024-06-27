@@ -19,7 +19,7 @@ const config = {
 		},
 		extend: {
 			transitionDuration: {
-				'15000': '15000ms',
+				'20000': '20000ms',
 			},
 			colors: {
 				border: 'hsl(var(--border))',

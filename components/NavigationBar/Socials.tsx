@@ -99,6 +99,7 @@ const Socials = () => {
 				<Tooltip>
 					<TooltipTrigger asChild>
 						<Link
+							aria-label='Github link of the website owner'
 							target='_blank'
 							href='https://github.com/froilanimnida'>
 							<Github />
@@ -112,6 +113,7 @@ const Socials = () => {
 				<Tooltip>
 					<TooltipTrigger asChild>
 						<Link
+							aria-label='Instagram Profile of the website owner'
 							target='_blank'
 							href='https://instagram.com/froilanimnida'>
 							<Instagram />
@@ -125,6 +127,7 @@ const Socials = () => {
 				<Tooltip>
 					<TooltipTrigger asChild>
 						<Link
+							aria-label='LinkedIn link of the website owner'
 							target='_blank'
 							href='https://linkedin.com/in/froilanimnida'>
 							<LinkedIn />
