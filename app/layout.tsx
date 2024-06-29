@@ -10,10 +10,16 @@ const font = Inter({
 	style: 'normal',
 	subsets: ['latin'],
 });
-
 export const metadata = {
 	title: 'Froilan | Software Engineer',
-	description: 'Personal Website of Froilan',
+	description:
+		'Personal Website of Froilan, Software Engineer and Web Developer based in the Caloocan Philippines.',
+	'google-site-verification': 'cea09eQxw2xZKhdxfMUKhILNuAzqAeQnrIWLUC027IA',
+	robots: 'index, follow',
+	'og:title': 'Froilan | Software Engineer',
+	'og:description':
+		'Personal Website of Froilan, Software Engineer and Web Developer based in the Caloocan Philippines.',
+	'og:type': 'website',
 };
 
 export default function RootLayout({
