@@ -21,4 +21,11 @@ export const certificationsListsPreview = [
 		link: 'https://www.credly.com/badges/d77f5665-8275-4a53-acf4-edf0405f1473/public_url',
 		badge_id: 'd77f5665-8275-4a53-acf4-edf0405f1473',
 	},
+	{
+		id: 3,
+		title: 'Python Essentials 2',
+		description: 'Cisco Networking Academy',
+		link: 'https://www.credly.com/badges/2bd4e85e-4cf0-460d-a2b6-2e8facfc6d6b/public_url',
+		badge_id: '2bd4e85e-4cf0-460d-a2b6-2e8facfc6d6b',
+	},
 ];

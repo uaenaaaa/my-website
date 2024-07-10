@@ -144,13 +144,15 @@ const NowPlayingWidget = ({ className }: NowPlayingProps) => {
 				<CardFooter className='p-0 flex justify-start mt-3'>
 					{nowPlaying != null ? (
 						<Button
+							asChild
 							className='flex flex-row gap-4'
 							variant='outline'>
-							<SpotifyIcon className='w-6 h-6' />
 							{songUrl ? (
 								<Link
 									target='_blank'
+									className='flex items-center gap-2'
 									href={songUrl}>
+									<SpotifyIcon className='w-6 h-6' />
 									Open in Spotify
 								</Link>
 							) : (
