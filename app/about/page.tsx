@@ -3,7 +3,7 @@ import React from 'react';
 import TechStack from '@/app/about/TechStack';
 import NowPlayingWidget from '@/components/widget/NowPlayingWidget';
 import Image from 'next/image';
-
+import ReadMe from '@/app/about/components/ReadMe';
 export const metadata = {
 	title: 'About - Froilan | Software Engineer',
 	description: 'Personal Website of Froilan',
@@ -60,10 +60,10 @@ const About = () => {
 						<div className='flex flex-col w-full gap-5'>
 							<div
 								className='
-                w-full
-                flex
-                flex-col
-                gap-3'>
+									w-full
+									flex
+									flex-col
+									gap-3'>
 								<h1 className='text-xs md:text-base'>
 									I develop applications using Javascript frameworks and
 									libraries like React and also use the React&apos;s Framework
@@ -100,6 +100,7 @@ const About = () => {
 								<NowPlayingWidget />
 							</div>
 							<div className='grid w-full grid-rows-2 gap-3 justify-center items-center grid-cols-1 lg:grid-cols-2'>
+								{/* <ReadMe /> */}
 								<Image
 									src='https://github-readme-stats.vercel.app/api/wakatime?username=froilanimnida'
 									alt='Wakatime Stats'

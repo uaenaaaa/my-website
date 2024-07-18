@@ -28,4 +28,11 @@ export const certificationsListsPreview = [
 		link: 'https://www.credly.com/badges/2bd4e85e-4cf0-460d-a2b6-2e8facfc6d6b/public_url',
 		badge_id: '2bd4e85e-4cf0-460d-a2b6-2e8facfc6d6b',
 	},
+	{
+		id: 4,
+		title: 'Operating Systems Basics',
+		description: 'Cisco Networking Academy',
+		link: 'https://www.credly.com/badges/6bcbf2ef-2079-41f6-a4d7-9305871b67d2/public_url',
+		badge_id: '6bcbf2ef-2079-41f6-a4d7-9305871b67d2',
+	},
 ];
