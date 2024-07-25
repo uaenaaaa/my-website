@@ -46,7 +46,7 @@ export default function Home() {
 								className='absolute duration-20000 animate-spin z-30 top-[50%] left-0 fill-[#62ADFC]'
 							/>
 							<Image
-								priority={false}
+								priority={true}
 								src={Me}
 								quality={50}
 								width={400}
