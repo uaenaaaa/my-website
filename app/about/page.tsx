@@ -36,10 +36,11 @@ const About = () => {
 				<div className='flex flex-col lg:flex-row w-full gap-5'>
 					<div className='gap-5 flex lg:w-1/4 flex-col'>
 						<h1 className='text-xs md:text-base'>
-							Hi, I&apos;m Froilan Aquino, currently living in Caloocan City,
-							Metro Manila, Philippines! I&apos;m a full-stack
-							developer/engineer, I develop and leverage JavaScript, Python, and
-							MySQL, and i am a technology enthusiast.
+							Hi, I&apos;m Froilan Aquino, currently living in
+							Caloocan City, Metro Manila, Philippines! I&apos;m a
+							full-stack developer/engineer, I develop and
+							leverage JavaScript, Python, and MySQL, and i am a
+							technology enthusiast.
 						</h1>
 						<div>
 							<h1 className='font-bold text-xl'>Contact</h1>
@@ -53,7 +54,9 @@ const About = () => {
 								</Link>{' '}
 								me at:
 							</p>
-							<p className='text-sm text-primary'>froilanaquino1@gmail.com</p>
+							<p className='text-sm text-primary'>
+								froilanaquino1@gmail.com
+							</p>
 						</div>
 					</div>
 					<div className='w-full'>
@@ -65,41 +68,48 @@ const About = () => {
 									flex-col
 									gap-3'>
 								<h1 className='text-xs md:text-base'>
-									I develop applications using Javascript frameworks and
-									libraries like React and also use the React&apos;s Framework
-									Next.js, like this website. I used Next.js to create this
-									website. I also used Supabase as my database and Firebase for
-									my authentication. I&apos;m currently getting my
-									bachelor&apos;s degree in Information Technology and will
-									finish in 2025. To sum up, my learning modalities are not
-									limited to school classes; I also attend online sessions at
-									the Google Developer Students Club to learn something new and
+									I develop applications using Javascript
+									frameworks and libraries like React and also
+									use the React&apos;s Framework Next.js, like
+									this website. I used Next.js to create this
+									website. I also used Supabase as my database
+									and Firebase for my authentication. I&apos;m
+									currently getting my bachelor&apos;s degree
+									in Information Technology and will finish in
+									2025. To sum up, my learning modalities are
+									not limited to school classes; I also attend
+									online sessions at the Google Developer
+									Students Club to learn something new and
 									seek opportunities for my career.
 								</h1>
 								<h1 className='text-xs md:text-base'>
-									In my self-taught programmer session, I used platforms like
-									YouTube and freecodecamp to and at the same time learning
-									UI/UX design since I&apos;m also interested in designing. I
-									also used Udemy, EdX, Coursera, and a like to learn something
-									new and to add to my knowledge of programming. I also used
-									platforms like Medium and Dev.to to read articles about
-									programming and learn something new. I also used platforms
-									like Stackoverflow and GitHub to read questions and learn
-									something new. Right now, I&apos;m currently planning on
-									getting certified in the Google UI/UX certification program
+									In my self-taught programmer session, I used
+									platforms like YouTube and freecodecamp to
+									and at the same time learning UI/UX design
+									since I&apos;m also interested in designing.
+									I also used Udemy, EdX, Coursera, and a like
+									to learn something new and to add to my
+									knowledge of programming. I also used
+									platforms like Medium and Dev.to to read
+									articles about programming and learn
+									something new. I also used platforms like
+									Stackoverflow and GitHub to read questions
+									and learn something new. Right now, I&apos;m
+									currently planning on getting certified in
+									the Google UI/UX certification program
 									through Coursera.
 								</h1>
 								<h1 className='text-xs md:text-base'>
-									When I&apos;m not coding, I&apos; reading English books to
-									hone my proficiency and expand my vocabulary. I also watch
-									emerging technology-related videos to keep myself up-to-date
-									with the latest technology trends.
+									When I&apos;m not coding, I&apos; reading
+									English books to hone my proficiency and
+									expand my vocabulary. I also watch emerging
+									technology-related videos to keep myself
+									up-to-date with the latest technology
+									trends.
 								</h1>
 							</div>
-							<div className='flex w-full flex-col gap-3 md:flex-row'>
-								<NowPlayingWidget />
-							</div>
-							<div className='grid w-full grid-rows-2 gap-3 justify-center items-center grid-cols-1 lg:grid-cols-2'>
+							<TechStack />
+							<div className='grid max-h-screen w-full grid-rows-2 gap-3 justify-center items-center grid-cols-1 lg:grid-cols-2 overflow-y-auto'>
 								{/* <ReadMe /> */}
 								<Image
 									src='https://github-readme-stats.vercel.app/api/wakatime?username=froilanimnida'
@@ -133,7 +143,9 @@ const About = () => {
 									className='w-11/12  justify-self-center'
 								/>
 							</div>
-							<TechStack />
+							<div className='flex w-full flex-col gap-3 md:flex-row'>
+								<NowPlayingWidget className='w-full self-center max-w-7xl' />
+							</div>
 						</div>
 					</div>
 				</div>

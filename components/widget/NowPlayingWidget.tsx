@@ -22,6 +22,7 @@ interface NowPlaying {
 	title: string;
 	artist: string;
 	songUrl: string;
+	artistUrl: string;
 }
 
 interface NowPlayingProps {
@@ -65,6 +66,7 @@ const NowPlayingWidget = ({ className }: NowPlayingProps) => {
 		albumImageUrl,
 		title,
 		artist,
+		artistUrl,
 		progress;
 	if (typeof nowPlaying === 'string') {
 		if (nowPlaying === 'Currently Not Playing') {
@@ -87,17 +89,20 @@ const NowPlayingWidget = ({ className }: NowPlayingProps) => {
 		title = nowPlaying.title;
 		artist = nowPlaying.artist;
 		songUrl = nowPlaying.songUrl;
+		artistUrl = nowPlaying.artistUrl;
 		progress = (nowPlaying.timePlayed / nowPlaying.timeTotal) * 100;
 	}
 	return (
 		<Card
-			className={`w-full ${
+			className={`${
 				!nowPlaying || !nowPlaying.isPlaying ? 'hidden' : ''
 			} ${className}`}>
 			<CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
 				<CardTitle className='text-sm font-medium'>
-					<span className='font-semibold text-[#1ed760]'>SPOTIFY</span> |
-					Froilan&apos;s Now Playing
+					<span className='font-semibold text-[#1ed760]'>
+						SPOTIFY
+					</span>{' '}
+					| Froilan&apos;s Now Playing
 				</CardTitle>
 				<SpotifyIcon className='w-10 h-10' />
 			</CardHeader>
@@ -105,13 +110,17 @@ const NowPlayingWidget = ({ className }: NowPlayingProps) => {
 				<div className='flex flex-row w-full justify-start items-center gap-2'>
 					{nowPlaying != null ? (
 						nowPlaying.albumImageUrl ? (
-							<Image
-								src={nowPlaying.albumImageUrl}
-								alt='Album Image'
-								width={80}
-								height={80}
-								className='rounded-sm'
-							/>
+							<Link
+								target='_blank'
+								href={songUrl ? songUrl : ''}>
+								<Image
+									src={nowPlaying.albumImageUrl}
+									alt='Album Image'
+									width={80}
+									height={80}
+									className='rounded-sm cursor-pointer'
+								/>
+							</Link>
 						) : (
 							<Music />
 						)
@@ -120,9 +129,25 @@ const NowPlayingWidget = ({ className }: NowPlayingProps) => {
 					)}
 					<div className='flex flex-col gap-1 w-3/4 max-w-[75%]'>
 						<h1 className='text-base font-bold overflow-hidden whitespace-nowrap overflow-ellipsis'>
-							{title}
+							{
+								<Link
+									target='_blank'
+									className='cursor-pointer hover:underline'
+									href={songUrl ? songUrl : ''}>
+									{title}
+								</Link>
+							}
 						</h1>
-						<h1 className='text-sm font-regular'>{artist}</h1>
+						<h1 className='text-sm font-regular'>
+							{
+								<Link
+									className='cursor-pointer hover:underline'
+									target='_blank'
+									href={artistUrl ? artistUrl : ''}>
+									{artist}
+								</Link>
+							}
+						</h1>
 						<div className='flex flex-col w-full gap-2'>
 							<Progress
 								aria-label='song progress'
@@ -142,30 +167,18 @@ const NowPlayingWidget = ({ className }: NowPlayingProps) => {
 				</div>
 
 				<CardFooter className='p-0 flex justify-start mt-3'>
-					{nowPlaying != null ? (
-						<Button
-							asChild
-							className='flex flex-row gap-4'
-							variant='outline'>
-							{songUrl ? (
-								<Link
-									target='_blank'
-									className='flex items-center gap-2'
-									href={songUrl}>
-									<SpotifyIcon className='w-6 h-6' />
-									Open in Spotify
-								</Link>
-							) : (
-								'Paused'
-							)}
-						</Button>
-					) : (
-						<Button
-							variant={'ghost'}
-							disabled>
-							Currently Not Playing
-						</Button>
-					)}
+					<Button
+						asChild
+						className='flex flex-row gap-4'
+						variant='outline'>
+						<Link
+							target='_blank'
+							className='flex items-center gap-2'
+							href={songUrl ? songUrl : ''}>
+							<SpotifyIcon className='w-6 h-6' />
+							Play on Spotify
+						</Link>
+					</Button>
 				</CardFooter>
 			</CardContent>
 		</Card>

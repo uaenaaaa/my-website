@@ -1,5 +1,6 @@
 import React from 'react';
 import { certificationsListsPreview } from '@/app/data/CertificationsListsPreview';
+import { Badge } from '@/components/ui/badge';
 import {
 	Card,
 	CardContent,
@@ -67,14 +68,22 @@ export default function Home() {
 								className='
 									w-3/4
 									flex
+									gap-3
 									justify-center
 									flex-col
 									items-left'>
+								<Badge
+									variant={'secondary'}
+									className='w-fit font-semibold text-md'>
+									🐧 Filling in learning gaps
+								</Badge>
 								<h1 className='font-bold text-xl md:text-3xl'>
-									Annyeonghaseyo, Jeoneun Peurolan(Froilan) imnida,
+									Annyeonghaseyo, Jeoneun Peurolan(Froilan)
+									imnida,
 								</h1>
 								<p className='text-xs md:text-base'>
-									Software Developer Based In Caloocan Philippines
+									Software Developer Based In Caloocan
+									Philippines
 								</p>
 							</div>
 							<Button
@@ -95,7 +104,7 @@ export default function Home() {
 									Join My Discord
 								</Link>
 							</Button>
-							<NowPlayingWidget />
+							<NowPlayingWidget className='w-full max-w-xl' />
 						</div>
 					</div>
 					<div
@@ -135,7 +144,9 @@ export default function Home() {
 								<Card key={index}>
 									<CardHeader>
 										<CardTitle>{cert.title}</CardTitle>
-										<CardDescription>{cert.description}</CardDescription>
+										<CardDescription>
+											{cert.description}
+										</CardDescription>
 									</CardHeader>
 									<CardContent className='flex flex-col justify-center items-center'>
 										<EmbedCard badge_id={cert.badge_id} />
