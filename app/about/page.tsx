@@ -3,7 +3,8 @@ import React from 'react';
 import TechStack from '@/app/about/TechStack';
 import NowPlayingWidget from '@/components/widget/NowPlayingWidget';
 import Image from 'next/image';
-import ReadMe from '@/app/about/components/ReadMe';
+import AboutMeCode from '@/app/about/components/AboutMeCode';
+
 export const metadata = {
 	title: 'About - Froilan | Software Engineer',
 	description: 'Personal Website of Froilan',
@@ -109,32 +110,8 @@ const About = () => {
 								</h1>
 							</div>
 							<TechStack />
+							<AboutMeCode />
 							<div className='grid max-h-screen w-full grid-rows-2 gap-3 justify-center items-center grid-cols-1 lg:grid-cols-2 overflow-y-auto'>
-								{/* <ReadMe /> */}
-								<Image
-									src='https://github-readme-stats.vercel.app/api/wakatime?username=froilanimnida'
-									alt='Wakatime Stats'
-									width={800}
-									height={800}
-									className='w-11/12 justify-self-center'
-								/>
-								<Image
-									src='https://github-readme-stats.vercel.app/api/top-langs/?username=froilanimnida&layout=donut'
-									alt='Top Languages'
-									width={400}
-									height={400}
-									className='w-11/12  justify-self-center'
-								/>
-
-								<Image
-									src={
-										'https://github-readme-stats.vercel.app/api?username=froilanimnida&show_icons=true&theme=transparent'
-									}
-									alt='GitHub Stats'
-									width={400}
-									height={400}
-									className='w-11/12  justify-self-center'
-								/>
 								<Image
 									src='https://roadmap.sh/card/wide/667cd2ae2028c2d81892c220?variant=light&roadmaps=frontend'
 									alt='Frontend Roadmap'
@@ -142,8 +119,6 @@ const About = () => {
 									height={400}
 									className='w-11/12  justify-self-center'
 								/>
-							</div>
-							<div className='flex w-full flex-col gap-3 md:flex-row'>
 								<NowPlayingWidget className='w-full self-center max-w-7xl' />
 							</div>
 						</div>
