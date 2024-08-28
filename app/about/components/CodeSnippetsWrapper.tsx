@@ -42,7 +42,7 @@ const CodeSnippetsWrapper = ({ children }: { children: React.ReactNode }) => {
 					<h1 className='text-white'>stats.py</h1>
 				</div>
 			</CardHeader>
-			<CardContent className='bg-[#282A36] flex-col flex rounded-b-md text-white pt-5'>
+			<CardContent className='bg-[#282A36] flex-col flex gap-5 rounded-b-md text-white pt-5'>
 				{children}
 			</CardContent>
 		</Card>

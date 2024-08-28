@@ -130,7 +130,10 @@ const AboutMeCode = async () => {
 				{'{'}
 			</div>
 			<div className='pl-5 flex flex-col'>
-				<p className='text-[#F1FA8C]'>&apos;languages&apos;: {'{'}</p>
+				<p className='text-[#F1FA8C]'>
+					&apos;languages&apos;:{' '}
+					<span className='text-white'>{'{'}</span>
+				</p>
 				{wakatime_languages?.map((lang) => {
 					return (
 						<StringKeyValueDictionary
@@ -142,7 +145,10 @@ const AboutMeCode = async () => {
 					);
 				})}
 				{'}'},
-				<p className='text-[#F1FA8C]'>&apos;activity&apos;: {'{'}</p>
+				<p className='text-[#F1FA8C]'>
+					&apos;activity&apos;:
+					<span className='text-white'> {'{'}</span>
+				</p>
 				{wakatime_categories?.map((category) => {
 					return (
 						<StringKeyValueDictionary
@@ -156,7 +162,10 @@ const AboutMeCode = async () => {
 					);
 				})}
 				{'}'},
-				<p className='text-[#F1FA8C]'>&apos;editors&apos;: {'{'}</p>
+				<p className='text-[#F1FA8C]'>
+					&apos;editors&apos;:{' '}
+					<span className='text-white'> {'{'}</span>
+				</p>
 				{wakatime_editors?.map((editor) => {
 					return (
 						<StringKeyValueDictionary
@@ -171,7 +180,8 @@ const AboutMeCode = async () => {
 				})}
 				{'}'},
 				<p className='text-[#F1FA8C]'>
-					&apos;operating_systems&apos;: {'{'}
+					&apos;operating_systems&apos;:
+					<span className='text-white'> {'{'}</span>
 				</p>
 				{wakatime_operating_systems?.map((os) => {
 					return (
@@ -189,7 +199,7 @@ const AboutMeCode = async () => {
 					value={wakatime_daily_average}
 				/>
 				<StringKeyValueDictionary
-					dict_key='total_seconds'
+					dict_key='total_hours'
 					value={wakatime_total.toString()}
 				/>
 			</div>

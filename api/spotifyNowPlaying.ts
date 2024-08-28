@@ -3,16 +3,15 @@ const NOW_PLAYING_ENDPOINT =
 	'https://api.spotify.com/v1/me/player/currently-playing';
 const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token';
 
-//Function to generate an access token using the refresh token everytime the website is opened or refreshed
 export const getAccessToken = async (
 	client_id: string,
 	client_secret: string,
 	refresh_token: string,
 ) => {
-	//Creates a base64 code of client_id:client_secret as required by the API
-	const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
+	const basic = Buffer.from(`${client_id}:${client_secret}`).toString(
+		'base64',
+	);
 
-	//The response will contain the access token
 	const response = await fetch(TOKEN_ENDPOINT, {
 		method: 'POST',
 		headers: {
