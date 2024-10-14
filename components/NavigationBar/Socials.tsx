@@ -68,7 +68,7 @@ const Socials = () => {
 						</Link>
 					</TooltipTrigger>
 					<TooltipContent>
-						<p>@froilanimnida</p>
+						<p>@uaenaaaa</p>
 					</TooltipContent>
 				</Tooltip>
 
@@ -82,7 +82,7 @@ const Socials = () => {
 						</Link>
 					</TooltipTrigger>
 					<TooltipContent>
-						<p>@froilanimnida</p>
+						<p>@uuaenaaa</p>
 					</TooltipContent>
 				</Tooltip>
 
