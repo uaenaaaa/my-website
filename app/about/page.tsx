@@ -84,7 +84,7 @@ const About = () => {
 									seek opportunities for my career.
 								</h1>
 								<h1 className='text-xs md:text-base'>
-									In my self-taught programmer session, I used
+									In my self-taught programming session, I used
 									platforms like YouTube and freecodecamp to
 									and at the same time learning UI/UX design
 									since I&apos;m also interested in designing.
