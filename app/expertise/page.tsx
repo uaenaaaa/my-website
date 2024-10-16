@@ -3,9 +3,12 @@ import {
 	Card,
 	CardContent,
 	CardDescription,
+	CardFooter,
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { ExpertiseList } from '@/app/data/ExpertiseList';
 
 export const metadata = {
 	title: 'Expertise - Froilan | Software Engineer',
@@ -36,30 +39,31 @@ const Expertise = ({}) => {
 						xl:text-8xl'>
 					Expertise
 				</h1>
-				<div className='w-full flex mt-2 flex-col'>
-					<div className='w-full'>
-						<Card>
-							<CardHeader>
-								<CardTitle>Information and Communication Technology</CardTitle>
-							</CardHeader>
-							<CardContent>
-								I am an expert in the field of information and communication
-								technology (ICT), and I love it. I earned my NC-II license in
-								2021 while I was a senior in high school, demonstrating my
-								proficiency in this area. I developed my skills in a variety of
-								concentrations while focusing on my specialty strand in ICT. In
-								order to provide outstanding visual content, I started dabbling
-								in the field of visual graphic design in grade 11. I
-								concentrated on computer hardware and networking in grade 12,
-								learning useful skills for configuring and managing computer
-								systems. I maintained a stellar academic record during the
-								course of the two years, earning an average grade of 92. With
-								such an amazing history, I am sure that I will be able to
-								contribute my creativity, technical expertise, and commitment to
-								any ICT/IT project I embark on.
-							</CardContent>
-						</Card>
-					</div>
+				<div className='w-full flex mt-2 flex-col gap-10'>
+					{ExpertiseList.map((expertise, index) => (
+						<div
+							key={index}
+							className='w-full flex flex-col'>
+							<Card>
+								<CardHeader>
+									<CardTitle>{expertise.name}</CardTitle>
+									<CardDescription>
+										{expertise.dateObtained}
+									</CardDescription>
+								</CardHeader>
+								<CardContent>{expertise.content}</CardContent>
+								<CardFooter className='grid grid-cols-2 gap-3 lg:grid-cols-4'>
+									{expertise.badge.map((badge, index) => (
+										<Badge
+											key={index}
+											className='w-fit'>
+											{badge}
+										</Badge>
+									))}
+								</CardFooter>
+							</Card>
+						</div>
+					))}
 				</div>
 			</div>
 		</>
