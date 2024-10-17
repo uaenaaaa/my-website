@@ -11,14 +11,14 @@ const font = Inter({
 	subsets: ['latin'],
 });
 export const metadata = {
-	title: 'Froilan | Software Engineer',
+	title: 'Froilan | Web Developer',
 	description:
-		'Personal Website of Froilan, Software Engineer and Web Developer based in the Caloocan Philippines.',
+		'Personal Website of Froilan, Web Developer and Web Developer based in the Caloocan Philippines.',
 	'google-site-verification': 'cea09eQxw2xZKhdxfMUKhILNuAzqAeQnrIWLUC027IA',
 	robots: 'index, follow',
-	'og:title': 'Froilan | Software Engineer',
+	'og:title': 'Froilan | Web Developer',
 	'og:description':
-		'Personal Website of Froilan, Software Engineer and Web Developer based in the Caloocan Philippines.',
+		'Personal Website of Froilan, Web Developer and Web Developer based in the Caloocan Philippines.',
 	'og:type': 'website',
 };
 

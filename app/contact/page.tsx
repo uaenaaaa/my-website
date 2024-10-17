@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 export const metadata = {
-	title: 'Contacts - Froilan | Software Engineer',
+	title: 'Contacts - Froilan | Web Developer',
 };
 
 const Contacts = () => {

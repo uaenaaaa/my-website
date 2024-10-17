@@ -11,7 +11,7 @@ import { Badge } from '@/components/ui/badge';
 import { ExpertiseList } from '@/app/data/ExpertiseList';
 
 export const metadata = {
-	title: 'Expertise - Froilan | Software Engineer',
+	title: 'Expertise - Froilan | Web Developer',
 	description: 'Personal Website of Froilan',
 };
 

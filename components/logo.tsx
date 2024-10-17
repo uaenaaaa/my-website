@@ -11,7 +11,7 @@ const Logo = () => {
 					Froilan
 				</Link>
 				<p className='text-primary font-normal text-sm md:text-base'>
-					Software Engineer
+					Web Developer
 				</p>
 			</div>
 		</>

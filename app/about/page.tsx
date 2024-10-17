@@ -6,7 +6,7 @@ import Image from 'next/image';
 import AboutMeCode from '@/app/about/components/AboutMeCode';
 
 export const metadata = {
-	title: 'About - Froilan | Software Engineer',
+	title: 'About - Froilan | Web Developer',
 	description: 'Personal Website of Froilan',
 };
 
@@ -84,13 +84,13 @@ const About = () => {
 									seek opportunities for my career.
 								</h1>
 								<h1 className='text-xs md:text-base'>
-									In my self-taught programming session, I used
-									platforms like YouTube and freecodecamp to
-									and at the same time learning UI/UX design
-									since I&apos;m also interested in designing.
-									I also used Udemy, EdX, Coursera, and a like
-									to learn something new and to add to my
-									knowledge of programming. I also used
+									In my self-taught programming session, I
+									used platforms like YouTube and freecodecamp
+									to and at the same time learning UI/UX
+									design since I&apos;m also interested in
+									designing. I also used Udemy, EdX, Coursera,
+									and a like to learn something new and to add
+									to my knowledge of programming. I also used
 									platforms like Medium and Dev.to to read
 									articles about programming and learn
 									something new. I also used platforms like

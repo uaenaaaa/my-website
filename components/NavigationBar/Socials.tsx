@@ -9,7 +9,7 @@ import {
 } from '@/components/ui/tooltip';
 
 export const metadata = {
-	title: 'Socials | Froilan | Software Engineer',
+	title: 'Socials | Froilan | Web Developer',
 	description: 'Personal Website of Froilan',
 };
 const LinkedIn = () => {
@@ -17,7 +17,7 @@ const LinkedIn = () => {
 		<svg
 			role='img'
 			viewBox='0 0 24 24'
-			className='w-6 h-6 md:w-8 md:h-8'
+			className='w-5 h-5 md:w-6 md:h-6'
 			fill='currentColor'
 			xmlns='http://www.w3.org/2000/svg'>
 			<title>LinkedIn</title>
@@ -31,7 +31,7 @@ const Github = () => {
 		<svg
 			role='img'
 			fill='currentColor'
-			className='w-6 h-6 md:w-8 md:h-8'
+			className='w-5 h-5 md:w-6 md:h-6'
 			viewBox='0 0 24 24'
 			xmlns='http://www.w3.org/2000/svg'>
 			<title>GitHub</title>
@@ -44,7 +44,7 @@ const Instagram = () => {
 	return (
 		<svg
 			fill='currentColor'
-			className='w-6 h-6 md:w-8 md:h-8'
+			className='w-5 h-5 md:w-6 md:h-6'
 			role='img'
 			viewBox='0 0 24 24'
 			xmlns='http://www.w3.org/2000/svg'>
